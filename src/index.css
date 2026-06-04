@@ -35,6 +35,19 @@
   --color-on-error: #ffffff;
   --color-error-container: #ffdad6;
   --color-on-error-container: #93000a;
+    --color-background: oklch(0.97 0.018 85);
+  --color-foreground: oklch(0.22 0.03 145);
+  --color-card: oklch(0.985 0.012 85);
+  --color-muted: oklch(0.92 0.018 85);
+  --color-muted-foreground: oklch(0.42 0.025 110);
+  --color-border: oklch(0.86 0.025 85);
+  --color-forest: oklch(0.32 0.055 150);
+  --color-forest-deep: oklch(0.22 0.045 150);
+  --color-wood: oklch(0.45 0.075 55);
+  --color-cream: oklch(0.97 0.018 85);
+  --color-gold: oklch(0.72 0.13 75);
+  --font-display: "Cormorant Garamond", serif;
+  --font-sans: "Inter", sans-serif;
 }
 
 /* Custom premium aesthetic utilities */
