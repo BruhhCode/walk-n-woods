@@ -1,0 +1,6 @@
+{
+  "name": "Walk n Woods",
+  "description": "A quiet luxury fine dining website for Walk n Woods, featuring a forest-themed aesthetic, dynamic menu exploration, and an interactive table reservation system.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

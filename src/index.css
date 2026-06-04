@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-serif: "Playfair Display", Georgia, serif;
+  --font-sans: "Manrope", sans-serif;
+  
+  --color-primary: #061b0e;
+  --color-on-primary: #ffffff;
+  --color-primary-container: #1b3022;
+  --color-on-primary-container: #819986;
+  --color-inverse-primary: #b4cdb8;
+  --color-secondary: #7f5533;
+  --color-on-secondary: #ffffff;
+  --color-secondary-container: #ffc69b;
+  --color-on-secondary-container: #7a502e;
+  --color-tertiary: #1e1603;
+  --color-on-tertiary: #ffffff;
+  --color-tertiary-container: #342a14;
+  --color-on-tertiary-container: #a09174;
+  --color-surface: #fdf9f4;
+  --color-on-surface: #1c1c19;
+  --color-surface-dim: #ddd9d5;
+  --color-surface-bright: #fdf9f4;
+  --color-surface-container-lowest: #ffffff;
+  --color-surface-container-low: #f7f3ee;
+  --color-surface-container: #f1ede8;
+  --color-surface-container-high: #ebe8e3;
+  --color-surface-container-highest: #e6e2dd;
+  --color-on-surface-variant: #434843;
+  --color-outline: #737973;
+  --color-outline-variant: #c3c8c1;
+  --color-surface-tint: #4d6453;
+  --color-error: #ba1a1a;
+  --color-on-error: #ffffff;
+  --color-error-container: #ffdad6;
+  --color-on-error-container: #93000a;
+}
+
+/* Custom premium aesthetic utilities */
+.glass-panel {
+  background: rgba(253, 249, 244, 0.85); /* surface color with transparency */
+  backdrop-filter: blur(24px);
+  -webkit-backdrop-filter: blur(24px);
+  border: 1px solid rgba(27, 48, 34, 0.08); /* light forest container border */
+}
+
+.soft-shadow {
+  box-shadow: 0 10px 45px rgba(6, 27, 14, 0.04);
+}
+
+.glow-hover {
+  transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.glow-hover:hover {
+  box-shadow: 0 0 30px rgba(180, 205, 184, 0.3);
+}
+
+html {
+  scroll-behavior: smooth;
+  background-color: #fdf9f4;
+  color: #1c1c19;
+}
