@@ -10,7 +10,7 @@
   --color-muted: oklch(0.92 0.018 85);
   --color-muted-foreground: oklch(0.42 0.025 110);
   --color-border: oklch(0.86 0.025 85);
-  --color-forest: oklch(0.32 0.055 150);
+  --color-forest: rgb(28, 59, 35);
   --color-forest-deep: oklch(0.22 0.045 150);
   --color-wood: oklch(0.45 0.075 55);
   --color-cream: oklch(0.97 0.018 85);
@@ -21,7 +21,7 @@
 
 /* Custom premium aesthetic utilities */
 .glass-panel {
-  background: rgba(253, 249, 244, 0.85); /* surface color with transparency */
+  background: rgb(28, 59, 35); /* surface color with transparency */
   backdrop-filter: blur(24px);
   -webkit-backdrop-filter: blur(24px);
   border: 1px solid rgba(27, 48, 34, 0.08); /* light forest container border */
