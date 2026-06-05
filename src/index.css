@@ -4,7 +4,7 @@
 :root {
   --font-serif: "Playfair Display", Georgia, serif;
   --font-sans: "Manrope", sans-serif;
-  --color-background: oklch(0.97 0.018 85);
+  --color-background: oklch(47.994% 0.08072 136.316);
   --color-foreground: oklch(0.22 0.03 145);
   --color-card: oklch(0.985 0.012 85);
   --color-muted: oklch(0.92 0.018 85);
