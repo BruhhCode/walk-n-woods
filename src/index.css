@@ -21,7 +21,7 @@
 
 /* Custom premium aesthetic utilities */
 .glass-panel {
-  background: rgb(28, 59, 35); /* surface color with transparency */
+  background: rgb(253, 255, 231); /* surface color with transparency */
   backdrop-filter: blur(24px);
   -webkit-backdrop-filter: blur(24px);
   border: 1px solid rgba(27, 48, 34, 0.08); /* light forest container border */
