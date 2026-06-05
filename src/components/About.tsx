@@ -39,11 +39,11 @@ export default function About({ onNavigate }: AboutProps) {
               <div className="absolute bottom-6 left-6 right-6 p-6 rouned-xl glass-panel space-y-2 rounded-xl">
                 <div className="flex items-center gap-2 text-primary">
                   <MapPin className="w-4 h-4 text-secondary" />
-                  <span className="font-sans text-xs uppercase tracking-widest font-bold">
+                  <span className="font-sans text-xs uppercase tracking-widest font-bold text-black">
                     The Fireplace Alcove
                   </span>
                 </div>
-                <p className="font-sans text-xs text-white/80 leading-relaxed">
+                <p className="font-sans text-xs text-black/80 leading-relaxed">
                   Our raw oak hardwood tables sit alongside handcrafted stone fireplaces and living forest moss installations.
                 </p>
               </div>
