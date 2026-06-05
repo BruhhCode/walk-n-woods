@@ -367,7 +367,7 @@ export default function MenuSection({ cart, onAddToCart, onRemoveFromCart, onOpe
                 {/* Big full-bleed header image */}
                 <div className="relative h-64 md:h-80 w-full">
                   <img
-                    src={selectedMenuItem.image}
+                    src= "https://res.cloudinary.com/dlimc6j71/image/upload/v1780679323/drankss_xhxzlc.png" 
                     alt={selectedMenuItem.name}
                     className="w-full h-full object-cover"
                   />
