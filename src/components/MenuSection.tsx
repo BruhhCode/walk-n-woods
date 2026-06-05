@@ -85,10 +85,10 @@ export default function MenuSection({ cart, onAddToCart, onRemoveFromCart, onOpe
             The Menu
           </span>
           <h2 className="font-serif text-3xl md:text-5xl font-bold text-primary tracking-tight">
-            Culinary Immersion
+            Seasonal Signature Plates
           </h2>
           <p className="font-sans text-base text-on-surface-variant max-w-2xl mx-auto leading-relaxed">
-            A curated selection of our finest dishes, crafted with wild pasture ingredients, organic garden greens, and baked over hearth wood fires.
+            Browse our chef-curated visual menu, designed to showcase each dish with elegant imagery and refined naming.
           </p>
         </div>
 
@@ -250,18 +250,11 @@ export default function MenuSection({ cart, onAddToCart, onRemoveFromCart, onOpe
 
                   {/* Text Details Area */}
                   <div className={`p-6 ${isCenterpiece ? 'lg:p-10' : ''}`}>
-                    <div className="flex justify-between items-start gap-2 mb-2">
-                      <h3 className={`font-serif tracking-tight text-white font-bold ${isCenterpiece ? 'text-2xl lg:text-3xl' : 'text-xl'}`}>
+                    <div className="mb-2">
+                      <h3 className={`font-serif tracking-tight text-primary font-bold ${isCenterpiece ? 'text-2xl lg:text-3xl' : 'text-xl'}`}>
                         {item.name}
                       </h3>
-                      <span className={`font-sans text-white font-bold ${isCenterpiece ? 'text-xl lg:text-2xl' : 'text-lg'}`}>
-                        ${item.price}
-                      </span>
                     </div>
-
-                    <p className="font-sans text-sm text-white/80 leading-relaxed line-clamp-3">
-                      {item.description}
-                    </p>
                   </div>
                 </div>
 
@@ -296,7 +289,7 @@ export default function MenuSection({ cart, onAddToCart, onRemoveFromCart, onOpe
                       }}
                       className="inline-flex items-center gap-1 bg-primary-container hover:bg-primary hover:scale-105 text-white py-2 px-4 rounded-xl text-xs font-sans font-bold shadow hover:shadow-lg transition-all cursor-pointer"
                     >
-                      <Plus className="w-3.5 h-3.5 text-inverse-primary" /> Add Selection
+                      <Plus className="w-3.5 h-3.5 text-inverse-primary" /> Select Dish
                     </button>
                   </div>
                 </div>

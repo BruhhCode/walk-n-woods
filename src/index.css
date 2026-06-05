@@ -4,27 +4,34 @@
 :root {
   --font-serif: "Playfair Display", Georgia, serif;
   --font-sans: "Manrope", sans-serif;
-  --color-background: oklch(47.994% 0.08072 136.316);
-  --color-foreground: oklch(0.22 0.03 145);
-  --color-card: oklch(0.985 0.012 85);
-  --color-muted: oklch(0.92 0.018 85);
-  --color-muted-foreground: oklch(0.42 0.025 110);
-  --color-border: oklch(0.86 0.025 85);
-  --color-forest: rgb(28, 59, 35);
-  --color-forest-deep: oklch(0.22 0.045 150);
-  --color-wood: oklch(0.45 0.075 55);
-  --color-cream: oklch(0.97 0.018 85);
-  --color-gold: oklch(0.72 0.13 75);
+  --color-background: #f7f4eb;
+  --color-foreground: #1c3b23;
+  --color-card: #ffffff;
+  --color-muted: #ede7db;
+  --color-muted-foreground: #5a6758;
+  --color-border: #d3c9b8;
+  --color-forest: #1c3b23;
+  --color-forest-deep: #142b1a;
+  --color-wood: #816f56;
+  --color-cream: #f8f5eb;
+  --color-gold: #b59050;
+  --color-primary: #1c3b23;
+  --color-primary-container: #e8efe2;
+  --color-secondary: #7f6c51;
+  --color-on-surface-variant: #55664f;
+  --color-outline: #8c8479;
+  --color-inverse-primary: #ffffff;
+  --color-error: #b33834;
+  --color-error-container: #fde7e5;
   --font-display: "Cormorant Garamond", serif;
-  --font-sans: "Inter", sans-serif;
 }
 
 /* Custom premium aesthetic utilities */
 .glass-panel {
-  background: rgb(253, 255, 231); /* surface color with transparency */
+  background: rgba(255, 255, 255, 0.92);
   backdrop-filter: blur(24px);
   -webkit-backdrop-filter: blur(24px);
-  border: 1px solid rgba(27, 48, 34, 0.08); /* light forest container border */
+  border: 1px solid rgba(28, 59, 35, 0.08);
 }
 
 .soft-shadow {
@@ -41,6 +48,65 @@
 
 html {
   scroll-behavior: smooth;
-  background-color: #365a42;
-  color: #1c1c19;
+  background-color: var(--color-cream);
+  color: var(--color-foreground);
+}
+
+body {
+  min-height: 100vh;
+  background-color: var(--color-cream);
+  color: var(--color-foreground);
+  font-family: var(--font-sans);
+}
+
+.bg-surface {
+  background-color: var(--color-cream);
+}
+
+.bg-surface-container {
+  background-color: var(--color-card);
+}
+
+.bg-surface-container-low {
+  background-color: #f7f4eb;
+}
+
+.bg-surface-container-high {
+  background-color: #faf7f0;
+}
+
+.text-primary {
+  color: var(--color-primary);
+}
+
+.text-secondary {
+  color: var(--color-secondary);
+}
+
+.text-on-surface-variant {
+  color: var(--color-on-surface-variant);
+}
+
+.text-outline {
+  color: var(--color-outline);
+}
+
+.bg-primary {
+  background-color: var(--color-primary);
+}
+
+.bg-primary-container {
+  background-color: var(--color-primary-container);
+}
+
+.text-inverse-primary {
+  color: var(--color-inverse-primary);
+}
+
+.bg-inverse-primary {
+  background-color: var(--color-inverse-primary);
+}
+
+.bg-error-container {
+  background-color: var(--color-error-container);
 }

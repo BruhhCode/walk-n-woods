@@ -154,9 +154,9 @@ export default function ReservationSection({ lookupTrigger, onResetLookupTrigger
   };
 
   return (
-    <section id="reservations" className="py-24 md:py-32 bg-primary-container relative overflow-hidden">
+    <section id="reservations" className="py-24 md:py-32 bg-surface relative overflow-hidden">
       {/* Background organic ring overlay represent fireplace warmth */}
-      <div className="absolute inset-0 opacity-10" style={{ backgroundImage: 'radial-gradient(circle at 20% 50%, rgba(255, 255, 255, 0.4) 0%, transparent 60%)' }} />
+      <div className="absolute inset-0 opacity-10" style={{ backgroundImage: 'radial-gradient(circle at 20% 50%, rgba(255, 255, 255, 0.7) 0%, transparent 60%)' }} />
 
       <div className="max-w-4xl mx-auto px-6 relative z-10">
         
@@ -168,7 +168,7 @@ export default function ReservationSection({ lookupTrigger, onResetLookupTrigger
               setLookupDone(false);
               setLookupResults([]);
             }}
-            className="text-xs font-sans font-bold tracking-widest uppercase text-inverse-primary hover:text-white flex items-center gap-1.5 cursor-pointer"
+            className="text-xs font-sans font-bold tracking-widest uppercase text-primary hover:text-secondary flex items-center gap-1.5 cursor-pointer"
           >
             {showLookup ? (
               <>
@@ -195,11 +195,11 @@ export default function ReservationSection({ lookupTrigger, onResetLookupTrigger
               >
                 {/* Header info */}
                 <div className="text-center max-w-xl mx-auto mb-10 space-y-3">
-                  <span className="material-symbols-outlined text-4xl text-inverse-primary mb-2 block" style={{ fontVariationSettings: "'FILL' 1" }}>restaurant</span>
-                  <h2 className="font-serif text-3xl md:text-5xl font-bold text-white tracking-tight">
+                  <span className="material-symbols-outlined text-4xl text-secondary mb-2 block" style={{ fontVariationSettings: "'FILL' 1" }}>restaurant</span>
+                  <h2 className="font-serif text-3xl md:text-5xl font-bold text-primary tracking-tight">
                     Reserve Your Table Today
                   </h2>
-                  <p className="font-sans text-sm text-primary-fixed-dim leading-relaxed">
+                  <p className="font-sans text-sm text-on-surface-variant leading-relaxed">
                     Ensure your spots for an unforgettable evening of culinary immersion and sanctuary quiet luxury.
                   </p>
                 </div>
@@ -208,52 +208,52 @@ export default function ReservationSection({ lookupTrigger, onResetLookupTrigger
                   {/* Basic Contacts */}
                   <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
                     <div>
-                      <label className="block text-inverse-primary font-sans text-xs uppercase tracking-wider font-bold mb-2">
+                      <label className="block text-primary font-sans text-xs uppercase tracking-wider font-bold mb-2">
                         Guest Full Name
                       </label>
                       <div className="relative">
-                        <User className="w-4 h-4 text-primary-fixed-dim/50 absolute left-3 top-1/2 -translate-y-1/2" />
+                        <User className="w-4 h-4 text-secondary/70 absolute left-3 top-1/2 -translate-y-1/2" />
                         <input
                           type="text"
                           required
                           value={name}
                           onChange={(e) => setName(e.target.value)}
                           placeholder="Your Name"
-                          className="w-full bg-white/10 border border-white/20 text-white rounded-xl py-3 pl-10 pr-4 text-sm focus:outline-none focus:ring-1 focus:ring-inverse-primary focus:border-inverse-primary placeholder-primary-fixed-dim/30"
+                          className="w-full bg-surface-container border border-primary-container/10 text-primary rounded-xl py-3 pl-10 pr-4 text-sm focus:outline-none focus:ring-1 focus:ring-primary/20 focus:border-primary placeholder:text-on-surface-variant/50"
                         />
                       </div>
                     </div>
 
                     <div>
-                      <label className="block text-inverse-primary font-sans text-xs uppercase tracking-wider font-bold mb-2">
+                      <label className="block text-primary font-sans text-xs uppercase tracking-wider font-bold mb-2">
                         Email Address
                       </label>
                       <div className="relative">
-                        <Mail className="w-4 h-4 text-primary-fixed-dim/50 absolute left-3 top-1/2 -translate-y-1/2" />
+                        <Mail className="w-4 h-4 text-secondary/70 absolute left-3 top-1/2 -translate-y-1/2" />
                         <input
                           type="email"
                           required
                           value={email}
                           onChange={(e) => setEmail(e.target.value)}
                           placeholder="name@gmail.com"
-                          className="w-full bg-white/10 border border-white/20 text-white rounded-xl py-3 pl-10 pr-4 text-sm focus:outline-none focus:ring-1 focus:ring-inverse-primary focus:border-inverse-primary placeholder-primary-fixed-dim/30"
+                          className="w-full bg-surface-container border border-primary-container/10 text-primary rounded-xl py-3 pl-10 pr-4 text-sm focus:outline-none focus:ring-1 focus:ring-primary/20 focus:border-primary placeholder:text-on-surface-variant/50"
                         />
                       </div>
                     </div>
 
                     <div>
-                      <label className="block text-inverse-primary font-sans text-xs uppercase tracking-wider font-bold mb-2">
+                      <label className="block text-primary font-sans text-xs uppercase tracking-wider font-bold mb-2">
                         Phone Number
                       </label>
                       <div className="relative">
-                        <Phone className="w-4 h-4 text-primary-fixed-dim/50 absolute left-3 top-1/2 -translate-y-1/2" />
+                        <Phone className="w-4 h-4 text-secondary/70 absolute left-3 top-1/2 -translate-y-1/2" />
                         <input
                           type="tel"
                           required
                           value={phone}
                           onChange={(e) => setPhone(e.target.value)}
                           placeholder="+1 (555) 000-0000"
-                          className="w-full bg-white/10 border border-white/20 text-white rounded-xl py-3 pl-10 pr-4 text-sm focus:outline-none focus:ring-1 focus:ring-inverse-primary focus:border-inverse-primary placeholder-primary-fixed-dim/30"
+                          className="w-full bg-surface-container border border-primary-container/10 text-primary rounded-xl py-3 pl-10 pr-4 text-sm focus:outline-none focus:ring-1 focus:ring-primary/20 focus:border-primary placeholder:text-on-surface-variant/50"
                         />
                       </div>
                     </div>
@@ -262,7 +262,7 @@ export default function ReservationSection({ lookupTrigger, onResetLookupTrigger
                   {/* Schedule selection dates & guest selection */}
                   <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
                     <div>
-                      <label className="block text-inverse-primary font-sans text-xs uppercase tracking-wider font-bold mb-2">
+                      <label className="block text-primary font-sans text-xs uppercase tracking-wider font-bold mb-2">
                         Dining Date
                       </label>
                       <input
@@ -270,12 +270,12 @@ export default function ReservationSection({ lookupTrigger, onResetLookupTrigger
                         required
                         value={date}
                         onChange={(e) => setDate(e.target.value)}
-                        className="w-full bg-white/10 border border-white/20 text-white rounded-xl p-3 text-sm focus:outline-none focus:ring-1 focus:ring-inverse-primary focus:focus:border-inverse-primary"
+                        className="w-full bg-surface-container border border-primary-container/10 text-primary rounded-xl p-3 text-sm focus:outline-none focus:ring-1 focus:ring-primary/20 focus:border-primary"
                       />
                     </div>
 
                     <div>
-                      <label className="block text-inverse-primary font-sans text-xs uppercase tracking-wider font-bold mb-2">
+                      <label className="block text-primary font-sans text-xs uppercase tracking-wider font-bold mb-2">
                         Arrival Time
                       </label>
                       <input
@@ -283,20 +283,20 @@ export default function ReservationSection({ lookupTrigger, onResetLookupTrigger
                         required
                         value={time}
                         onChange={(e) => setTime(e.target.value)}
-                        className="w-full bg-white/10 border border-white/20 text-white rounded-xl p-3 text-sm focus:outline-none focus:ring-1 focus:ring-inverse-primary focus:focus:border-inverse-primary"
+                        className="w-full bg-surface-container border border-primary-container/10 text-primary rounded-xl p-3 text-sm focus:outline-none focus:ring-1 focus:ring-primary/20 focus:border-primary"
                       />
                     </div>
 
                     <div>
-                      <label className="block text-inverse-primary font-sans text-xs uppercase tracking-wider font-bold mb-2">
+                      <label className="block text-primary font-sans text-xs uppercase tracking-wider font-bold mb-2">
                         Seating Covers count
                       </label>
                       <div className="relative">
-                        <Users className="w-4 h-4 text-primary-fixed-dim/50 absolute left-3.5 top-1/2 -translate-y-1/2 pointer-events-none" />
+                        <Users className="w-4 h-4 text-secondary/70 absolute left-3.5 top-1/2 -translate-y-1/2 pointer-events-none" />
                         <select
                           value={guests}
                           onChange={(e) => setGuests(Number(e.target.value))}
-                          className="w-full bg-white/10 border border-white/20 text-white rounded-xl py-3 pl-11 pr-4 text-sm focus:outline-none focus:ring-1 focus:ring-inverse-primary appearance-none [&>option]:text-primary"
+                          className="w-full bg-surface-container border border-primary-container/10 text-primary rounded-xl py-3 pl-11 pr-4 text-sm focus:outline-none focus:ring-1 focus:ring-primary/20 appearance-none"
                         >
                           <option value="2">2 Guests Table</option>
                           <option value="3">3 Guests Table</option>
@@ -309,8 +309,8 @@ export default function ReservationSection({ lookupTrigger, onResetLookupTrigger
                   </div>
 
                   {/* Interactive Restaurant seat-selection Map */}
-                  <div className="bg-white/5 border border-white/10 p-5 rounded-2xl">
-                    <h4 className="font-serif text-sm font-bold text-white mb-3 flex items-center gap-1.5">
+                  <div className="bg-surface-container-low border border-primary-container/10 p-5 rounded-2xl">
+                    <h4 className="font-serif text-sm font-bold text-primary mb-3 flex items-center gap-1.5">
                       <MapPin className="w-4 h-4 text-secondary" /> Seating Preference Spot Selection
                     </h4>
                     
@@ -329,13 +329,13 @@ export default function ReservationSection({ lookupTrigger, onResetLookupTrigger
                           className={`p-3 rounded-xl border text-left flex flex-col gap-1 transition-all cursor-pointer ${
                             seatingPref === pref.id
                               ? 'bg-inverse-primary border-inverse-primary text-primary'
-                              : 'border-white/10 hover:border-white/30 hover:bg-white/5 text-white'
+                              : 'bg-surface-container/80 border-primary-container/10 hover:border-primary-container/30 hover:bg-primary-container/70 text-primary'
                           }`}
                         >
                           <span className="font-serif text-xs font-bold leading-tight">
                             {pref.label}
                           </span>
-                          <span className={`text-[9px] leading-tight ${seatingPref === pref.id ? 'text-primary/75' : 'text-primary-fixed-dim/60'}`}>
+                          <span className={`text-[9px] leading-tight ${seatingPref === pref.id ? 'text-primary/75' : 'text-on-surface-variant/70'}`}>
                             {pref.desc}
                           </span>
                         </button>
@@ -346,20 +346,20 @@ export default function ReservationSection({ lookupTrigger, onResetLookupTrigger
                   {/* Dietary Restrictions and Special Requests */}
                   <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                     {/* Dietary boxes */}
-                    <div className="bg-white/5 border border-white/10 p-5 rounded-2xl">
-                      <label className="block text-inverse-primary font-sans text-xs uppercase tracking-wider font-bold mb-3">
+                    <div className="bg-surface-container-low border border-primary-container/10 p-5 rounded-2xl">
+                      <label className="block text-primary font-sans text-xs uppercase tracking-wider font-bold mb-3">
                         Guest Dietary Alerts
                       </label>
-                      <div className="grid grid-cols-2 gap-2 text-xs text-white">
+                      <div className="grid grid-cols-2 gap-2 text-xs text-primary">
                         {['Gluten-Free', 'Nut Allergy', 'Vegan', 'Vegetarian'].map((diet) => (
                           <label key={diet} className="flex items-center gap-2 cursor-pointer group">
                             <input
                               type="checkbox"
                               checked={dietary.includes(diet)}
                               onChange={() => toggleDietary(diet)}
-                              className="rounded border-white/20 text-secondary focus:ring-inverse-primary bg-transparent w-4 h-4"
+                              className="rounded border-primary-container/20 text-secondary focus:ring-primary bg-transparent w-4 h-4"
                             />
-                            <span className="group-hover:text-inverse-primary transition-colors">
+                            <span className="group-hover:text-secondary transition-colors">
                               {diet}
                             </span>
                           </label>
@@ -369,7 +369,7 @@ export default function ReservationSection({ lookupTrigger, onResetLookupTrigger
 
                     {/* Special requests field */}
                     <div>
-                      <label className="block text-inverse-primary font-sans text-xs uppercase tracking-wider font-bold mb-2">
+                      <label className="block text-primary font-sans text-xs uppercase tracking-wider font-bold mb-2">
                         Special Notes or allergies
                       </label>
                       <textarea
@@ -377,7 +377,7 @@ export default function ReservationSection({ lookupTrigger, onResetLookupTrigger
                         onChange={(e) => setSpecialRequests(e.target.value)}
                         placeholder="Allergy alerts, wedding anniversary, wheel-chair access, high-chair needs..."
                         rows={3}
-                        className="w-full bg-white/10 border border-white/20 text-white rounded-xl p-3 text-sm focus:outline-none focus:ring-1 focus:ring-inverse-primary placeholder-primary-fixed-dim/30 resize-none"
+                        className="w-full bg-surface-container border border-primary-container/10 text-primary rounded-xl p-3 text-sm focus:outline-none focus:ring-1 focus:ring-primary/20 placeholder:text-on-surface-variant/50 resize-none"
                       />
                     </div>
                   </div>
@@ -395,7 +395,7 @@ export default function ReservationSection({ lookupTrigger, onResetLookupTrigger
 
                   <button
                     type="submit"
-                    className="w-full bg-inverse-primary text-primary-container font-serif text-lg font-bold py-4 rounded-xl hover:bg-white hover:scale-[1.02] active:scale-[0.98] hover:shadow-2xl transition-all duration-300 cursor-pointer shadow-lg mt-4 flex items-center justify-center gap-2"
+                    className="w-full bg-primary text-inverse-primary font-serif text-lg font-bold py-4 rounded-xl hover:bg-forest-deep hover:scale-[1.02] active:scale-[0.98] hover:shadow-2xl transition-all duration-300 cursor-pointer shadow-lg mt-4 flex items-center justify-center gap-2"
                   >
                     <ShieldCheck className="w-5 h-5 text-secondary" /> Confirm Sanctuary Reservation
                   </button>
@@ -408,7 +408,7 @@ export default function ReservationSection({ lookupTrigger, onResetLookupTrigger
                 initial={{ opacity: 0, scale: 0.95 }}
                 animate={{ opacity: 1, scale: 1 }}
                 tabIndex={0}
-                className="bg-surface text-primary p-8 md:p-12 rounded-3xl max-w-2xl mx-auto shadow-2xl text-center space-y-6 border border-primary-container/10 focus:outline-none"
+                className="bg-surface-container text-primary p-8 md:p-12 rounded-3xl max-w-2xl mx-auto shadow-2xl text-center space-y-6 border border-primary-container/10 focus:outline-none"
               >
                 <div className="w-16 h-16 rounded-full bg-primary-container text-inverse-primary flex items-center justify-center mx-auto mb-2 animate-bounce">
                   <CheckCircle className="w-10 h-10" />
@@ -500,18 +500,18 @@ export default function ReservationSection({ lookupTrigger, onResetLookupTrigger
             >
               <div className="text-center max-w-xl mx-auto mb-10 space-y-2">
                 <Search className="w-8 h-8 text-inverse-primary mx-auto mb-1 block" />
-                <h3 className="font-serif text-3xl font-bold text-white tracking-tight">
+                <h3 className="font-serif text-3xl font-bold text-primary tracking-tight">
                   Reservation Management Panel
                 </h3>
-                <p className="font-sans text-sm text-primary-fixed-dim">
+                <p className="font-sans text-sm text-on-surface-variant">
                   Retrieve and verify your reservations, change seating preferences, or cancel your tables.
                 </p>
               </div>
 
               {/* Search boxes form */}
-              <form onSubmit={handleLookup} className="grid grid-cols-1 md:grid-cols-3 gap-4 items-end bg-white/5 p-5 rounded-2xl mb-8 border border-white/10">
+              <form onSubmit={handleLookup} className="grid grid-cols-1 md:grid-cols-3 gap-4 items-end bg-surface-container border border-primary-container/10 p-5 rounded-2xl mb-8">
                 <div>
-                  <label className="block text-inverse-primary font-sans text-xs uppercase tracking-wider font-bold mb-2">
+                  <label className="block text-primary font-sans text-xs uppercase tracking-wider font-bold mb-2">
                     Guest Account Email
                   </label>
                   <input
@@ -519,11 +519,11 @@ export default function ReservationSection({ lookupTrigger, onResetLookupTrigger
                     value={lookupEmail}
                     onChange={(e) => setLookupEmail(e.target.value)}
                     placeholder="Enter email..."
-                    className="w-full bg-white/10 border border-white/20 text-white rounded-xl py-2.5 px-4 text-sm focus:outline-none focus:ring-1 focus:ring-inverse-primary focus:border-inverse-primary"
+                    className="w-full bg-surface-container border border-primary-container/10 text-primary rounded-xl py-2.5 px-4 text-sm focus:outline-none focus:ring-1 focus:ring-primary/20 focus:border-primary"
                   />
                 </div>
 
-                <div className="text-center md:text-left self-center text-primary-fixed-dim text-xs font-semibold uppercase tracking-wider pt-2 md:pt-0">
+                <div className="text-center md:text-left self-center text-on-surface-variant text-xs font-semibold uppercase tracking-wider pt-2 md:pt-0">
                   - OR BY TICKET CODE -
                 </div>
 
@@ -537,7 +537,7 @@ export default function ReservationSection({ lookupTrigger, onResetLookupTrigger
                       value={lookupCode}
                       onChange={(e) => setLookupCode(e.target.value)}
                       placeholder="e.g. WNW-8973"
-                      className="flex-1 bg-white/10 border border-white/20 text-white rounded-xl py-2.5 px-4 text-sm focus:outline-none focus:ring-1 focus:ring-inverse-primary focus:border-inverse-primary placeholder-primary-fixed-dim/35"
+                      className="flex-1 bg-surface-container border border-primary-container/10 text-primary rounded-xl py-2.5 px-4 text-sm focus:outline-none focus:ring-1 focus:ring-primary/20 focus:border-primary placeholder:text-on-surface-variant/50"
                     />
                     <button
                       type="submit"
@@ -556,11 +556,11 @@ export default function ReservationSection({ lookupTrigger, onResetLookupTrigger
                     lookupResults.map((booking) => (
                       <div
                         key={booking.id}
-                        className="bg-white/5 border border-white/10 rounded-2xl p-6 flex flex-col md:flex-row md:items-center justify-between gap-6"
+                        className="bg-surface-container border border-primary-container/10 rounded-2xl p-6 flex flex-col md:flex-row md:items-center justify-between gap-6"
                       >
                         <div className="space-y-2">
                           <div className="flex items-center gap-3">
-                            <span className="font-serif text-lg font-bold text-white">
+                            <span className="font-serif text-lg font-bold text-primary">
                               {booking.name}
                             </span>
                             <span className="text-[10px] font-sans font-bold tracking-wider py-1 px-3.5 rounded-full uppercase border border-white/15 bg-primary">
@@ -577,10 +577,10 @@ export default function ReservationSection({ lookupTrigger, onResetLookupTrigger
                             </span>
                           </div>
 
-                          <div className="grid grid-cols-2 sm:grid-cols-4 gap-4 text-xs font-sans text-primary-fixed-dim">
+                          <div className="grid grid-cols-2 sm:grid-cols-4 gap-4 text-xs font-sans text-on-surface-variant">
                             <div>
-                              <span className="text-white/40 block">Arrival Slot</span>
-                              <span className="text-white font-semibold">
+                              <span className="text-on-surface-variant block">Arrival Slot</span>
+                              <span className="text-primary font-semibold">
                                 {new Date(booking.date).toLocaleDateString(undefined, {
                                   month: 'short',
                                   day: 'numeric',
@@ -589,20 +589,20 @@ export default function ReservationSection({ lookupTrigger, onResetLookupTrigger
                             </div>
 
                             <div>
-                              <span className="text-white/40 block">Seating Covers</span>
-                              <span className="text-white font-semibold">{booking.guests} Guests</span>
+                              <span className="text-on-surface-variant block">Seating Covers</span>
+                              <span className="text-primary font-semibold">{booking.guests} Guests</span>
                             </div>
 
                             <div>
-                              <span className="text-white/40 block">Preferred Alcove</span>
-                              <span className="text-white font-semibold capitalize">
+                              <span className="text-on-surface-variant block">Preferred Alcove</span>
+                              <span className="text-primary font-semibold capitalize">
                                 {booking.seatingPreference.replace('-', ' ')}
                               </span>
                             </div>
 
                             <div>
-                              <span className="text-white/40 block">Special alerts</span>
-                              <span className="text-white font-semibold line-clamp-1">
+                              <span className="text-on-surface-variant block">Special alerts</span>
+                              <span className="text-primary font-semibold line-clamp-1">
                                 {booking.dietaryRestrictions.join(', ') || 'No dietary alerts'}
                               </span>
                             </div>
@@ -621,18 +621,18 @@ export default function ReservationSection({ lookupTrigger, onResetLookupTrigger
                       </div>
                     ))
                   ) : (
-                    <div className="text-center py-12 bg-white/2">
+                    <div className="text-center py-12 bg-surface-container rounded-3xl border border-primary-container/10">
                       <HelpCircle className="w-10 h-10 text-secondary mx-auto mb-2 animate-bounce" />
-                      <p className="font-serif text-lg font-bold text-white mb-1">
+                      <p className="font-serif text-lg font-bold text-primary mb-1">
                         No Active Reservations Found
                       </p>
-                      <p className="font-sans text-xs text-primary-fixed-dim max-w-sm mx-auto">
+                      <p className="font-sans text-xs text-on-surface-variant max-w-sm mx-auto">
                         We couldn't locate bookings corresponding to your email or reference code. Search parameters are case-insensitive.
                       </p>
                     </div>
                   )
                 ) : (
-                  <div className="text-center py-12 text-primary-fixed-dim text-sm font-medium">
+                  <div className="text-center py-12 text-on-surface-variant text-sm font-medium">
                     Supply your lookup email or reference tickets above to inspect reservation status.
                   </div>
                 )}

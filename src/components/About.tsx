@@ -17,7 +17,7 @@ export default function About({ onNavigate }: AboutProps) {
   ];
 
   return (
-    <section id="about" className="py-24 md:py-32 bg-surface overflow-hidden text-white">
+    <section id="about" className="py-24 md:py-32 bg-surface overflow-hidden text-primary">
       <div className="max-w-6xl mx-auto px-6 md:px-8">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-20 items-center">
           {/* Narrative Image Layout with decorative floating features */}
@@ -36,7 +36,7 @@ export default function About({ onNavigate }: AboutProps) {
               />
               {/* Internal Glassmorphism Overlay representing dappled sunlight */}
               <div className="absolute inset-0 bg-gradient-to-t from-primary/30 to-transparent pointer-events-none" />
-              <div className="absolute bottom-6 left-6 right-6 p-6 rouned-xl glass-panel space-y-2 rounded-xl">
+              <div className="absolute bottom-6 left-6 right-6 p-6 rounded-xl glass-panel space-y-2">
                 <div className="flex items-center gap-2 text-primary">
                   <MapPin className="w-4 h-4 text-secondary" />
                   <span className="font-sans text-xs uppercase tracking-widest font-bold text-black">
@@ -55,11 +55,11 @@ export default function About({ onNavigate }: AboutProps) {
               whileInView={{ opacity: 1, scale: 1 }}
               viewport={{ once: true }}
               transition={{ duration: 0.8, delay: 0.3 }}
-              className="absolute -top-6 -right-6 lg:-right-10 bg-primary shadow-xl rounded-2xl p-5 border border-primary-container flex flex-col items-center gap-1 max-w-[140px] text-center hidden sm:flex : text-white tracking-tight leading-[1.1] drop-shadow-md select-none"
+              className="absolute -top-6 -right-6 lg:-right-10 bg-primary shadow-xl rounded-2xl p-5 border border-primary-container flex flex-col items-center gap-1 max-w-[140px] text-center hidden sm:flex text-white tracking-tight leading-[1.1] drop-shadow-md select-none"
             >
-              <Award className="w-8 h-8 text-inverse-primary animate-pulse : text-black tracking-tight leading-[1.1] drop-shadow-md select-none" />
+              <Award className="w-8 h-8 text-inverse-primary animate-pulse tracking-tight leading-[1.1] drop-shadow-md select-none" />
               <span className="font-serif text-sm font-semibold text-black">Top Fine Dining</span>
-              <span className="font-sans text-[9px] text-inverse-primary tracking-widest uppercase font-bold : text-black tracking-tight leading-[1.1] drop-shadow-md select-none">
+              <span className="font-sans text-[9px] text-inverse-primary tracking-widest uppercase font-bold tracking-tight leading-[1.1] drop-shadow-md select-none">
                 Dehradun 2011
               </span>
             </motion.div>
@@ -68,15 +68,15 @@ export default function About({ onNavigate }: AboutProps) {
           {/* Interactive Storyteller & Tab Navigator */}
           <div className="lg:col-span-6 flex flex-col gap-8">
             <div className="space-y-3">
-              <span className="font-sans text-xs text-white uppercase tracking-[0.25em] font-bold block tracking-tight leading-[1.1] drop-shadow-md select-none">
+              <span className="font-sans text-xs text-primary uppercase tracking-[0.25em] font-bold block tracking-tight leading-[1.1] select-none">
                 Our Story
               </span>
-              <h2 className="font-serif text-3xl md:text-5xl font-bold text-white tracking-tight leading-tight tracking-tight leading-[1.1] drop-shadow-md select-none">
+              <h2 className="font-serif text-3xl md:text-5xl font-bold text-primary tracking-tight leading-tight select-none">
                 A Sanctuary for the Senses
               </h2>
             </div>
 
-            <p className="font-sans text-base md:text-lg text-white leading-relaxed tracking-tight leading-[1.1] drop-shadow-md select-none">
+            <p className="font-sans text-base md:text-lg text-on-surface-variant leading-relaxed select-none">
               At Walk n Woods, we believe that dining should be an immersive experience that grounds you
               in the present moment. Born from a desire to bring the serenity of the fine dining experience to the table,
               our restaurant offers a quiet retreat from the urban bustle.
@@ -91,7 +91,7 @@ export default function About({ onNavigate }: AboutProps) {
                     key={story.id}
                     onClick={() => setActiveTab(idx)}
                     className={`pb-3 font-sans text-xs uppercase tracking-wider font-bold transition-all relative cursor-pointer flex-shrink-0 ${
-                      activeTab === idx ? 'text-white' : 'text-white/70 hover:text-white'
+                      activeTab === idx ? 'text-primary' : 'text-on-surface-variant hover:text-primary'
                     }`}
                   >
                     {story.title}
@@ -121,10 +121,10 @@ export default function About({ onNavigate }: AboutProps) {
                       {icons[activeTab]}
                     </div>
                     <div className="space-y-2">
-                      <h4 className="font-serif text-lg font-bold text-white">
+                      <h4 className="font-serif text-lg font-bold text-primary">
                         {STORIES[activeTab].title}
                       </h4>
-                      <p className="font-sans text-sm text-white/80 leading-relaxed">
+                      <p className="font-sans text-sm text-on-surface-variant leading-relaxed">
                         {STORIES[activeTab].description}
                       </p>
                     </div>
@@ -137,7 +137,7 @@ export default function About({ onNavigate }: AboutProps) {
             <div className="flex flex-col sm:flex-row gap-6 mt-2 pt-4 border-t border-primary-container/5 items-start sm:items-center">
               <button
                 onClick={() => onNavigate('menu')}
-                className="inline-flex items-center gap-2 text-white font-bold font-sans text-sm tracking-wider hover:gap-3 transition-all group cursor-pointer"
+                className="inline-flex items-center gap-2 text-primary font-bold font-sans text-sm tracking-wider hover:gap-3 transition-all group cursor-pointer"
               >
                 <span>Discover the Menu</span>
                 <ArrowRight className="w-4 h-4 text-white group-hover:translate-x-1 transition-transform" />
@@ -145,7 +145,7 @@ export default function About({ onNavigate }: AboutProps) {
 
               <button
                 onClick={() => onNavigate('reservations')}
-                className="inline-flex items-center gap-2 text-white font-bold font-sans text-sm tracking-wider hover:gap-3 transition-all group cursor-pointer"
+                className="inline-flex items-center gap-2 text-primary font-bold font-sans text-sm tracking-wider hover:gap-3 transition-all group cursor-pointer"
               >
                 <span>Reserve Cozy Corner</span>
                 <Compass className="w-4 h-4 text-white group-hover:rotate-45 transition-transform duration-500" />

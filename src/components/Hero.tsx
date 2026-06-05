@@ -10,7 +10,7 @@ export default function Hero({ onNavigate }: HeroProps) {
   return (
     <section
       id="hero"
-      className="relative min-h-[95vh] flex items-center justify-center pt-24 overflow-hidden"
+      className="relative min-h-[95vh] flex items-center justify-center pt-24 overflow-hidden bg-surface"
       style={{
         backgroundImage: `url(${HERO_IMAGE})`,
         backgroundSize: 'cover',
@@ -22,19 +22,19 @@ export default function Hero({ onNavigate }: HeroProps) {
       <div className="absolute inset-0 bg-primary/45 backdrop-blur-[1px]" />
 
       {/* Hero content card */}
-      <div className="relative z-10 text-center px-6 max-w-4xl mx-auto flex flex-col items-center gap-8">
+      <div className="relative z-10 text-center px-6 max-w-4xl mx-auto flex flex-col items-center gap-8 bg-surface-container/95 rounded-[3rem] p-10 shadow-2xl border border-primary-container/20">
         {/* Established badge with delicate leaf line */}
         <motion.div
           initial={{ opacity: 0, y: -20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1, delay: 0.2 }}
-          className="font-serif text-5xl md:text-7xl font-bold text-white tracking-tight leading-[1.1] drop-shadow-md select-none"
+          className="font-serif text-5xl md:text-7xl font-bold text-primary tracking-tight leading-[1.1] select-none"
         >
-          <span className="w-8 h-[1px] bg-inverse-primary/60" />
-          <span className="font-sans text-[11px] md:text-xs text-inverse-primary font-bold tracking-[0.3em] uppercase">
+          <span className="w-8 h-[1px] bg-primary/20 mx-auto mb-3 block" />
+          <span className="font-sans text-[11px] md:text-xs text-secondary font-bold tracking-[0.3em] uppercase">
             Est. 2011
           </span>
-          <span className="w-8 h-[1px] bg-inverse-primary/60" />
+          <span className="w-8 h-[1px] bg-primary/20 mx-auto mt-3 block" />
         </motion.div>
 
         {/* Cinematic headline */}
@@ -42,10 +42,10 @@ export default function Hero({ onNavigate }: HeroProps) {
           initial={{ opacity: 0, scale: 0.95 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 1.2, ease: [0.16, 1, 0.3, 1] }}
-          className="font-serif text-5xl md:text-7xl font-bold text-white tracking-tight leading-[1.1] drop-shadow-md select-none"
+          className="font-serif text-5xl md:text-7xl font-bold text-primary tracking-tight leading-[1.1] select-none"
         >
           Where Great Food <br />
-          <span className="font-serif italic font-light text-inverse-primary tracking-wide">
+          <span className="font-serif italic font-light text-secondary tracking-wide">
             Meets Nature
           </span>
         </motion.h1>
@@ -59,13 +59,14 @@ export default function Hero({ onNavigate }: HeroProps) {
         >
           <button
             onClick={() => onNavigate('menu')}
-            className="flex items-center justify-center gap-2 border-2 border-surface hover:border-inverse-primary text-white font-sans font-bold text-sm uppercase tracking-wider px-8 py-4 rounded-xl hover:bg-white/10 hover:scale-105 hover:shadow-2xl transition-all duration-300 cursor-pointer group"          >
-            <Compass className="w-4 h-4 text-secondary group-hover:rotate-45 transition-transform duration-500" />
+            className="flex items-center justify-center gap-2 bg-primary text-white font-sans font-bold text-sm uppercase tracking-wider px-8 py-4 rounded-xl hover:bg-forest-deep hover:shadow-2xl transition-all duration-300 cursor-pointer group"
+          >
+            <Compass className="w-4 h-4 text-inverse-primary group-hover:rotate-45 transition-transform duration-500" />
             Explore Menu
           </button>
           <button
             onClick={() => onNavigate('reservations')}
-            className="flex items-center justify-center gap-2 border-2 border-surface hover:border-inverse-primary text-white font-sans font-bold text-sm uppercase tracking-wider px-8 py-4 rounded-xl hover:bg-white/10 hover:scale-105 hover:shadow-2xl transition-all duration-300 cursor-pointer group"
+            className="flex items-center justify-center gap-2 bg-secondary text-white font-sans font-bold text-sm uppercase tracking-wider px-8 py-4 rounded-xl hover:bg-primary hover:shadow-2xl transition-all duration-300 cursor-pointer group"
           >
             <Flame className="w-4 h-4 text-inverse-primary group-hover:scale-110 transition-transform" />
             Reserve a Table
@@ -78,10 +79,10 @@ export default function Hero({ onNavigate }: HeroProps) {
           animate={{ opacity: [0, 1, 0] }}
           transition={{ repeat: Infinity, duration: 2.5, delay: 1 }}
           onClick={() => onNavigate('about')}
-          className="mt-12 text-inverse-primary hover:text-white cursor-pointer flex flex-col items-center gap-2"
+          className="mt-12 text-primary/80 hover:text-primary cursor-pointer flex flex-col items-center gap-2"
           aria-label="Scroll to narrative story"
         >
-          <span className="font-sans text-[10px] tracking-[0.2em] uppercase text-white/60">
+          <span className="font-sans text-[10px] tracking-[0.2em] uppercase text-on-surface-variant">
             Our Story
           </span>
           <ArrowDown className="w-5 h-5 animate-bounce" />

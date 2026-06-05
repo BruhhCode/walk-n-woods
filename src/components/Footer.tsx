@@ -41,7 +41,7 @@ export default function Footer({ onNavigate }: FooterProps) {
   };
 
   return (
-    <footer className="w-full py-24 bg-surface-container dark:bg-surface-container-high border-t border-surface-container-lowest relative">
+    <footer className="w-full py-24 bg-surface border-t border-primary-container/10 relative">
       <div className="max-w-6xl mx-auto px-6 md:px-8">
         <div className="grid grid-cols-1 md:grid-cols-12 gap-12 lg:gap-16">
           
@@ -64,7 +64,7 @@ export default function Footer({ onNavigate }: FooterProps) {
             <div className="flex gap-3">
               <button
                 onClick={handleCopyShareLink}
-                className="w-10 h-10 rounded-xl bg-surface border border-primary-container/10 flex items-center justify-center text-secondary hover:text-white hover:bg-secondary transition-all cursor-pointer shadow-sm relative group"
+                className="w-10 h-10 rounded-xl bg-surface-container border border-primary-container/10 flex items-center justify-center text-secondary hover:text-white hover:bg-secondary transition-all cursor-pointer shadow-sm relative group"
                 aria-label="Copy tasting menu share link"
               >
                 {shareSuccess ? <Check className="w-4 h-4 text-green-600 group-hover:text-white" /> : <Share2 className="w-4 h-4" />}
@@ -79,7 +79,7 @@ export default function Footer({ onNavigate }: FooterProps) {
                 onClick={() => {
                   window.location.href = 'mailto:reservations@walknwoods.com?subject=Inquiry';
                 }}
-                className="w-10 h-10 rounded-xl bg-surface border border-primary-container/10 flex items-center justify-center text-secondary hover:text-white hover:bg-primary transition-all cursor-pointer shadow-sm group relative"
+                className="w-10 h-10 rounded-xl bg-surface-container border border-primary-container/10 flex items-center justify-center text-secondary hover:text-white hover:bg-primary transition-all cursor-pointer shadow-sm group relative"
                 aria-label="Mailing support"
               >
                 <Mail className="w-4 h-4" />
@@ -101,7 +101,7 @@ export default function Footer({ onNavigate }: FooterProps) {
                   value={subEmail}
                   onChange={(e) => setSubEmail(e.target.value)}
                   placeholder="Enter email for announcements"
-                  className="flex-1 text-xs bg-surface border border-primary-container/10 focus:ring-1 focus:ring-secondary focus:border-secondary rounded-xl px-4 py-2.5 focus:outline-none placeholder-outline/80"
+                  className="flex-1 text-xs bg-surface-container border border-primary-container/10 text-primary focus:ring-1 focus:ring-secondary focus:border-secondary rounded-xl px-4 py-2.5 focus:outline-none placeholder:text-on-surface-variant/60"
                 />
                 <button
                   type="submit"
@@ -147,7 +147,7 @@ export default function Footer({ onNavigate }: FooterProps) {
 
         {/* Bottom copyright and scrolling indicator */}
         <div className="mt-16 pt-8 border-t border-primary-container/5 flex flex-col sm:flex-row justify-between items-center gap-4">
-          <p className="font-sans text-xs text-outline text-center sm:text-left">
+          <p className="font-sans text-xs text-on-surface-variant text-center sm:text-left">
             © 2026 Walk n Woods. All rights reserved. 
           </p>
 
