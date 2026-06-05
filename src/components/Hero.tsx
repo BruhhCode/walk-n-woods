@@ -28,11 +28,11 @@ export default function Hero({ onNavigate }: HeroProps) {
           initial={{ opacity: 0, y: -20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1, delay: 0.2 }}
-          className="flex items-center gap-3"
+          className="font-serif text-5xl md:text-7xl font-bold text-white tracking-tight leading-[1.1] drop-shadow-md select-none"
         >
           <span className="w-8 h-[1px] bg-inverse-primary/60" />
           <span className="font-sans text-[11px] md:text-xs text-inverse-primary font-bold tracking-[0.3em] uppercase">
-            Est. 2024
+            Est. 2011
           </span>
           <span className="w-8 h-[1px] bg-inverse-primary/60" />
         </motion.div>
