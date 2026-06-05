@@ -194,7 +194,7 @@ export default function MenuSection({ cart, onAddToCart, onRemoveFromCart, onOpe
               >
                 <div>
                   {/* Dish Image Wrapper */}
-                  <div className={`relative overflow-hidden ${isCenterpiece ? 'h-72 lg:h-[420px]' : 'h-64'}`}>
+                  <div className={`relative overflow-hidden bg-[#f7f4eb] ${isCenterpiece ? 'h-72 lg:h-[420px]' : 'h-64'}`}>
                     <img
                       src={item.image}
                       alt={item.name}
@@ -251,15 +251,15 @@ export default function MenuSection({ cart, onAddToCart, onRemoveFromCart, onOpe
                   {/* Text Details Area */}
                   <div className={`p-6 ${isCenterpiece ? 'lg:p-10' : ''}`}>
                     <div className="flex justify-between items-start gap-2 mb-2">
-                      <h3 className={`font-serif tracking-tight text-primary font-bold ${isCenterpiece ? 'text-2xl lg:text-3xl' : 'text-xl'}`}>
+                      <h3 className={`font-serif tracking-tight text-white font-bold ${isCenterpiece ? 'text-2xl lg:text-3xl' : 'text-xl'}`}>
                         {item.name}
                       </h3>
-                      <span className={`font-sans text-secondary font-bold ${isCenterpiece ? 'text-xl lg:text-2xl' : 'text-lg'}`}>
+                      <span className={`font-sans text-white font-bold ${isCenterpiece ? 'text-xl lg:text-2xl' : 'text-lg'}`}>
                         ${item.price}
                       </span>
                     </div>
 
-                    <p className="font-sans text-sm text-on-surface-variant leading-relaxed line-clamp-3">
+                    <p className="font-sans text-sm text-white/80 leading-relaxed line-clamp-3">
                       {item.description}
                     </p>
                   </div>
@@ -356,7 +356,7 @@ export default function MenuSection({ cart, onAddToCart, onRemoveFromCart, onOpe
             <div className="fixed inset-0 z-50 flex items-center justify-center p-4">
               {/* Dim backdrop */}
               <motion.div
-                initial={{ opacity: 0 }}
+                initial={{ opacity: 0 }}  
                 animate={{ opacity: 1 }}
                 exit={{ opacity: 0 }}
                 onClick={() => setSelectedMenuItem(null)}
