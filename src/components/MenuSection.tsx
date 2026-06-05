@@ -368,7 +368,7 @@ export default function MenuSection({ cart, onAddToCart, onRemoveFromCart, onOpe
                 initial={{ opacity: 0, scale: 0.95, y: 20 }}
                 animate={{ opacity: 1, scale: 1, y: 0 }}
                 exit={{ opacity: 0, scale: 0.95, y: 20 }}
-                transition={{ duration: 0.4, cubicBezier: [0.16, 1, 0.3, 1] }}
+                transition={{ duration: 0.4, ease: [0.16, 1, 0.3, 1] }}
                 className="relative bg-surface rounded-3xl w-full max-w-2xl max-h-[85vh] overflow-y-auto shadow-2xl z-10 border border-primary-container/10"
               >
                 {/* Big full-bleed header image */}

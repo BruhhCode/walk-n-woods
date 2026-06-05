@@ -168,18 +168,17 @@ export default function Footer({ onNavigate }: FooterProps) {
           {/* Restaurant Coordinates */}
           <div className="md:col-span-4 flex flex-col gap-4 text-sm text-on-surface-variant">
             <span className="font-sans text-xs uppercase tracking-widest font-bold text-primary block">
-              Sanctuary Location
+              Restaurant Location
             </span>
             <div className="space-y-4">
               <p className="leading-relaxed font-sans max-w-xs">
-                <span className="text-primary font-bold block">123 Forest Edge Drive</span>
-                Culinary District, California 90210
+                <span className="text-primary font-bold block"> 2nd FLOOR, CENNET TOWER, Sahastradhara Rd,</span>
+                Green View Apartment, Aman Vihar, Dehradun, Uttarakhand 248001
               </p>
 
               <p className="leading-relaxed font-sans">
                 <span className="text-primary font-bold block">Operating Hours</span>
-                Tuesday - Sunday, 5:00 PM - 11:00 PM <br />
-                <span className="text-[11px] text-outline italic">Mondays reserved for private chef tastures</span>
+                Monday - Sunday, 11:00 AM - 11:00 PM <br />
               </p>
             </div>
           </div>
@@ -188,7 +187,7 @@ export default function Footer({ onNavigate }: FooterProps) {
         {/* Bottom copyright and scrolling indicator */}
         <div className="mt-16 pt-8 border-t border-primary-container/5 flex flex-col sm:flex-row justify-between items-center gap-4">
           <p className="font-sans text-xs text-outline text-center sm:text-left">
-            © 2024 Walk n Woods. All rights reserved. Made under Organic Minimalism design philosophy.
+            © 2026 Walk n Woods. All rights reserved. 
           </p>
 
           <button
