@@ -43,7 +43,7 @@ export default function Header({ cart, onOpenCart, onNavigate, onOpenBookingsLoo
             : 'bg-transparent py-6'
         }`}
       >
-        <div className="max-w-6xl mx-auto px-6 md:px-8 flex justify-between items-center">
+        <div className="max-w-6xl mx-auto px-6 md:px-8 flex justify-between items-center: text-white tracking-tight leading-[1.1] drop-shadow-md select-none">
           {/* Logo */}
           <button
             onClick={() => handleLinkClick('hero')}
@@ -96,22 +96,6 @@ export default function Header({ cart, onOpenCart, onNavigate, onOpenBookingsLoo
             </button>
           </div>
 
-          {/* Right Action Icons & Button */}
-          <div className="flex items-center gap-4">
-            {/* Pre-order Basket Button */}
-            <button
-              onClick={onOpenCart}
-              className="relative p-2 text-primary hover:text-secondary hover:scale-105 transition-all cursor-pointer"
-              aria-label="Tasting Pre-order basket"
-            >
-              <ShoppingBag className="w-6 h-6" />
-              {totalCartItems > 0 && (
-                <span className="absolute -top-1 -right-1 bg-secondary text-white text-[10px] w-5 h-5 rounded-full flex items-center justify-center font-bold font-sans shadow">
-                  {totalCartItems}
-                </span>
-              )}
-            </button>
-
             {/* Book A Table Premium Button */}
             <button
               onClick={() => handleLinkClick('reservations')}
@@ -129,7 +113,6 @@ export default function Header({ cart, onOpenCart, onNavigate, onOpenBookingsLoo
               {mobileMenuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
             </button>
           </div>
-        </div>
       </nav>
 
       {/* Mobile Menu Overlay */}
