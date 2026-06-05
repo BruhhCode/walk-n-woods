@@ -17,7 +17,7 @@ export default function About({ onNavigate }: AboutProps) {
   ];
 
   return (
-    <section id="about" className="py-24 md:py-32 bg-surface overflow-hidden">
+    <section id="about" className="py-24 md:py-32 bg-surface overflow-hidden text-white">
       <div className="max-w-6xl mx-auto px-6 md:px-8">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-20 items-center">
           {/* Narrative Image Layout with decorative floating features */}
@@ -43,7 +43,7 @@ export default function About({ onNavigate }: AboutProps) {
                     The Fireplace Alcove
                   </span>
                 </div>
-                <p className="font-sans text-xs text-on-surface/80 leading-relaxed">
+                <p className="font-sans text-xs text-white/80 leading-relaxed">
                   Our raw oak hardwood tables sit alongside handcrafted stone fireplaces and living forest moss installations.
                 </p>
               </div>
@@ -68,15 +68,15 @@ export default function About({ onNavigate }: AboutProps) {
           {/* Interactive Storyteller & Tab Navigator */}
           <div className="lg:col-span-6 flex flex-col gap-8">
             <div className="space-y-3">
-              <span className="font-sans text-xs text-secondary uppercase tracking-[0.25em] font-bold block : text-white tracking-tight leading-[1.1] drop-shadow-md select-none">
+              <span className="font-sans text-xs text-white uppercase tracking-[0.25em] font-bold block tracking-tight leading-[1.1] drop-shadow-md select-none">
                 Our Story
               </span>
-              <h2 className="font-serif text-3xl md:text-5xl font-bold text-primary tracking-tight leading-tight : text-white tracking-tight leading-[1.1] drop-shadow-md select-none">
+              <h2 className="font-serif text-3xl md:text-5xl font-bold text-white tracking-tight leading-tight tracking-tight leading-[1.1] drop-shadow-md select-none">
                 A Sanctuary for the Senses
               </h2>
             </div>
 
-            <p className="font-sans text-base md:text-lg text-on-surface-variant leading-relaxed : text-white tracking-tight leading-[1.1] drop-shadow-md select-none">
+            <p className="font-sans text-base md:text-lg text-white leading-relaxed tracking-tight leading-[1.1] drop-shadow-md select-none">
               At Walk n Woods, we believe that dining should be an immersive experience that grounds you
               in the present moment. Born from a desire to bring the serenity of the fine dining experience to the table,
               our restaurant offers a quiet retreat from the urban bustle.
@@ -91,7 +91,7 @@ export default function About({ onNavigate }: AboutProps) {
                     key={story.id}
                     onClick={() => setActiveTab(idx)}
                     className={`pb-3 font-sans text-xs uppercase tracking-wider font-bold transition-all relative cursor-pointer flex-shrink-0 ${
-                      activeTab === idx ? 'text-primary' : 'text-outline hover:text-primary'
+                      activeTab === idx ? 'text-white' : 'text-white/70 hover:text-white'
                     }`}
                   >
                     {story.title}
@@ -121,10 +121,10 @@ export default function About({ onNavigate }: AboutProps) {
                       {icons[activeTab]}
                     </div>
                     <div className="space-y-2">
-                      <h4 className="font-serif text-lg font-bold text-primary">
+                      <h4 className="font-serif text-lg font-bold text-white">
                         {STORIES[activeTab].title}
                       </h4>
-                      <p className="font-sans text-sm text-on-surface-variant leading-relaxed">
+                      <p className="font-sans text-sm text-white/80 leading-relaxed">
                         {STORIES[activeTab].description}
                       </p>
                     </div>
@@ -137,18 +137,18 @@ export default function About({ onNavigate }: AboutProps) {
             <div className="flex flex-col sm:flex-row gap-6 mt-2 pt-4 border-t border-primary-container/5 items-start sm:items-center">
               <button
                 onClick={() => onNavigate('menu')}
-                className="inline-flex items-center gap-2 text-primary font-bold font-sans text-sm tracking-wider hover:gap-3 transition-all group cursor-pointer"
+                className="inline-flex items-center gap-2 text-white font-bold font-sans text-sm tracking-wider hover:gap-3 transition-all group cursor-pointer"
               >
                 <span>Discover the Menu</span>
-                <ArrowRight className="w-4 h-4 text-secondary group-hover:translate-x-1 transition-transform : text-white" />
+                <ArrowRight className="w-4 h-4 text-white group-hover:translate-x-1 transition-transform" />
               </button>
 
               <button
                 onClick={() => onNavigate('reservations')}
-                className="inline-flex items-center gap-2 text-secondary font-bold font-sans text-sm tracking-wider hover:gap-3 transition-all group cursor-pointer"
+                className="inline-flex items-center gap-2 text-white font-bold font-sans text-sm tracking-wider hover:gap-3 transition-all group cursor-pointer"
               >
                 <span>Reserve Cozy Corner</span>
-                <Compass className="w-4 h-4 text-primary group-hover:rotate-45 transition-transform duration-500 : text-white" />
+                <Compass className="w-4 h-4 text-white group-hover:rotate-45 transition-transform duration-500" />
               </button>
             </div>
           </div>
