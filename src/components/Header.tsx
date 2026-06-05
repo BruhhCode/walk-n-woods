@@ -178,18 +178,6 @@ export default function Header({ cart, onOpenCart, onNavigate, onOpenBookingsLoo
               </button>
             </div>
 
-            <div className="flex flex-col gap-4">
-              <button
-                onClick={() => handleLinkClick('reservations')}
-                className="w-full flex items-center justify-center gap-2 bg-primary text-white font-sans text-sm uppercase tracking-wider font-semibold py-4 rounded-xl shadow-md"
-              >
-                <Calendar className="w-4 h-4 text-inverse-primary" />
-                Book Table Now
-              </button>
-              <p className="text-center font-sans text-xs text-outline">
-                123 Forest Edge Drive, CA 90210
-              </p>
-            </div>
           </motion.div>
         )}
       </AnimatePresence>

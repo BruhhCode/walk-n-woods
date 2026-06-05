@@ -57,7 +57,7 @@ export default function Footer({ onNavigate }: FooterProps) {
             </div>
 
             <p className="font-sans text-sm text-on-surface-variant max-w-sm leading-relaxed">
-              Experience an immersive culinary escape designed around organic minimalism, dapped forest lights, and the crackle of wood hearthest fires.
+              Experience an immersive culinary escape designed around organic minimalism, seasonal ingredients, crafted to delight your senses and nourish your soul. Join us in celebrating the art of simple, sustainable dining.
             </p>
 
             {/* Quick social sharing action sheet */}
@@ -92,7 +92,7 @@ export default function Footer({ onNavigate }: FooterProps) {
             {/* Premium interactive subscription */}
             <form onSubmit={handleSubscribe} className="space-y-2 max-w-sm mt-2">
               <span className="block font-sans text-xs uppercase tracking-wider font-bold text-primary">
-                Join the Sanctuary Mailing List
+                Join the Reservation Mailing List
               </span>
               <div className="flex gap-2">
                 <input
@@ -124,45 +124,6 @@ export default function Footer({ onNavigate }: FooterProps) {
                 )}
               </AnimatePresence>
             </form>
-          </div>
-
-          {/* Quick links list */}
-          <div className="md:col-span-3 flex flex-col gap-4">
-            <span className="font-sans text-xs uppercase tracking-widest font-bold text-primary block">
-              Links
-            </span>
-            <div className="flex flex-col gap-3 text-sm text-on-surface-variant font-medium">
-              <button
-                onClick={() => onNavigate('about')}
-                className="hover:text-primary hover:translate-x-1 transition-all text-left cursor-pointer w-fit"
-              >
-                Our Sourcing Philosophy
-              </button>
-              <button
-                onClick={() => onNavigate('menu')}
-                className="hover:text-primary hover:translate-y-[-1px] transition-all text-left cursor-pointer w-fit"
-              >
-                Signature Pizzas & Pastas
-              </button>
-              <button
-                onClick={() => onNavigate('reservations')}
-                className="hover:text-primary hover:translate-x-1 transition-all text-left cursor-pointer w-fit"
-              >
-                Table Seats Booking
-              </button>
-              <a
-                href="#reservations"
-                className="hover:text-primary hover:translate-x-1 transition-all text-left flex items-center gap-1 cursor-pointer w-fit"
-              >
-                Careers Opportunities <ExternalLink className="w-3.5 h-3.5 text-secondary" />
-              </a>
-              <a
-                href="#about"
-                className="hover:text-primary hover:translate-y-[-1px] transition-all text-left flex items-center gap-1 cursor-pointer w-fit"
-              >
-                Sustainability Action <Leaf className="w-3.5 h-3.5 text-secondary" />
-              </a>
-            </div>
           </div>
 
           {/* Restaurant Coordinates */}

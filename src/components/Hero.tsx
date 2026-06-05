@@ -41,7 +41,7 @@ export default function Hero({ onNavigate }: HeroProps) {
         <motion.h1
           initial={{ opacity: 0, scale: 0.95 }}
           animate={{ opacity: 1, scale: 1 }}
-          transition={{ duration: 1.2, cubicBezier: [0.16, 1, 0.3, 1] }}
+          transition={{ duration: 1.2, ease: [0.16, 1, 0.3, 1] }}
           className="font-serif text-5xl md:text-7xl font-bold text-white tracking-tight leading-[1.1] drop-shadow-md select-none"
         >
           Where Great Food <br />
@@ -49,17 +49,6 @@ export default function Hero({ onNavigate }: HeroProps) {
             Meets Nature
           </span>
         </motion.h1>
-
-        {/* Elegant narrative intro */}
-        <motion.p
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 1.2, delay: 0.4 }}
-          className="font-sans text-base md:text-lg text-surface-container-low max-w-2xl mx-auto leading-relaxed drop-shadow-sm font-medium"
-        >
-          Experience a sensory escape where organic minimalism meets culinary excellence. Discover
-          flavors crafted from the earth, served in a sanctuary of quiet luxury.
-        </motion.p>
 
         {/* CTA Actions */}
         <motion.div
@@ -70,8 +59,7 @@ export default function Hero({ onNavigate }: HeroProps) {
         >
           <button
             onClick={() => onNavigate('menu')}
-            className="flex items-center justify-center gap-2 bg-surface text-primary font-sans font-bold text-sm uppercase tracking-wider px-8 py-4 rounded-xl hover:bg-surface-container hover:scale-105 hover:shadow-2xl transition-all duration-300 cursor-pointer shadow-lg group"
-          >
+            className="flex items-center justify-center gap-2 border-2 border-surface hover:border-inverse-primary text-white font-sans font-bold text-sm uppercase tracking-wider px-8 py-4 rounded-xl hover:bg-white/10 hover:scale-105 hover:shadow-2xl transition-all duration-300 cursor-pointer group"          >
             <Compass className="w-4 h-4 text-secondary group-hover:rotate-45 transition-transform duration-500" />
             Explore Menu
           </button>

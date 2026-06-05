@@ -78,7 +78,7 @@ export default function About({ onNavigate }: AboutProps) {
 
             <p className="font-sans text-base md:text-lg text-on-surface-variant leading-relaxed">
               At Walk n Woods, we believe that dining should be an immersive experience that grounds you
-              in the present moment. Born from a desire to bring the serenity of the forest to the table,
+              in the present moment. Born from a desire to bring the serenity of the fine dining experience to the table,
               our restaurant offers a quiet retreat from the urban bustle.
             </p>
 
