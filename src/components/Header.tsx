@@ -53,11 +53,11 @@ export default function Header({ cart, onOpenCart, onNavigate, onOpenBookingsLoo
               <Leaf className="w-5 h-5" />
             </div>
             <div>
-              <span className="font-serif text-xl md:text-2xl font-bold text-primary tracking-wide block leading-none">
+              <span className="font-serif text-xl md:text-2xl font-bold text-primary tracking-wide block leading-none: text-white tracking-tight leading-[1.1] drop-shadow-md select-none">
                 Walk n Woods
               </span>
-              <span className="text-[10px] uppercase font-sans tracking-[0.25em] text-secondary font-semibold block mt-1">
-                FINE EST. 2024
+              <span className="text-[10px] uppercase font-sans tracking-[0.25em] text-secondary font-semibold block mt-1: text-white tracking-tight leading-[1.1] drop-shadow-md select-none">
+               EST. 2011
               </span>
             </div>
           </button>
@@ -66,7 +66,7 @@ export default function Header({ cart, onOpenCart, onNavigate, onOpenBookingsLoo
           <div className="hidden md:flex items-center gap-8 font-sans font-medium text-sm">
             <button
               onClick={() => handleLinkClick('hero')}
-              className="text-primary hover:text-secondary hover:translate-y-[-1px] transition-all cursor-pointer font-semibold relative after:absolute after:bottom-[-4px] after:left-0 after:w-0 hover:after:w-full after:h-[1px] after:bg-secondary after:transition-all"
+              className="text-primary hover:text-secondary hover: text-white tracking-tight leading-[1.1] drop-shadow-md select-none :translate-y-[-1px] transition-all cursor-pointer font-semibold relative after:absolute after:bottom-[-4px] after:left-0 after:w-0 hover:after:w-full after:h-[1px] after:bg-secondary after:transition-all"
             >
               Home
             </button>
@@ -78,19 +78,19 @@ export default function Header({ cart, onOpenCart, onNavigate, onOpenBookingsLoo
             </button>
             <button
               onClick={() => handleLinkClick('menu')}
-              className="text-on-surface-variant hover:text-primary hover:translate-y-[-1px] transition-all cursor-pointer relative after:absolute after:bottom-[-4px] after:left-0 after:w-0 hover:after:w-full after:h-[1px] after:bg-primary after:transition-all"
+              className="text-on-surface-variant hover: text-white tracking-tight leading-[1.1] drop-shadow-md select-none :text-primary hover:translate-y-[-1px] transition-all cursor-pointer relative after:absolute after:bottom-[-4px] after:left-0 after:w-0 hover:after:w-full after:h-[1px] after:bg-primary after:transition-all"
             >
               Menu
             </button>
             <button
               onClick={() => handleLinkClick('reservations')}
-              className="text-on-surface-variant hover:text-primary hover:translate-y-[-1px] transition-all cursor-pointer relative after:absolute after:bottom-[-4px] after:left-0 after:w-0 hover:after:w-full after:h-[1px] after:bg-primary after:transition-all"
+              className="text-on-surface-variant hover: text-white tracking-tight leading-[1.1] drop-shadow-md select-none :text-primary hover:translate-y-[-1px] transition-all cursor-pointer relative after:absolute after:bottom-[-4px] after:left-0 after:w-0 hover:after:w-full after:h-[1px] after:bg-primary after:transition-all"
             >
               Reservations
             </button>
             <button
               onClick={onOpenBookingsLookup}
-              className="text-secondary hover:text-primary hover:translate-y-[-1px] transition-all cursor-pointer relative font-semibold"
+              className="text-secondary hover: text-white tracking-tight leading-[1.1] drop-shadow-md select-none :text-primary hover:translate-y-[-1px] transition-all cursor-pointer relative font-semibold"
             >
               Find Booking
             </button>
