@@ -72,7 +72,7 @@ export default function Header({ cart, onOpenCart, onNavigate, onOpenBookingsLoo
             </button>
             <button
               onClick={() => handleLinkClick('about')}
-              className="text-on-surface-variant hover:text-primary hover:translate-y-[-1px] transition-all cursor-pointer relative after:absolute after:bottom-[-4px] after:left-0 after:w-0 hover:after:w-full after:h-[1px] after:bg-primary after:transition-all"
+              className="text-on-surface-variant hover: text-7xl font-bold text-white tracking-tight leading-[1.1] drop-shadow-md select-none : text-primary hover:translate-y-[-1px] transition-all cursor-pointer relative after:absolute after:bottom-[-4px] after:left-0 after:w-0 hover:after:w-full after:h-[1px] after:bg-primary after:transition-all"
             >
               Our Story
             </button>
