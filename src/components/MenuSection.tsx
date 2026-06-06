@@ -43,7 +43,9 @@ export default function MenuSection(_: MenuSectionProps) {
 
               <motion.div initial={{ opacity: 0, scale: 0.98, y: 10 }} animate={{ opacity: 1, scale: 1, y: 0 }} exit={{ opacity: 0, scale: 0.98, y: 10 }} transition={{ duration: 0.25 }} className="relative bg-surface-container rounded-3xl w-full max-w-3xl overflow-hidden shadow-2xl border border-primary-container/10">
                 <div className="relative h-80">
-                  <img src={selected.image} alt={selected.name} className="w-full h-full object-cover" />
+                  <img src="https://res.cloudinary.com/dlimc6j71/image/upload/v1780679323/drankss_xhxzlc.png" alt={selected.name} className="w-full h-full object-cover" />
+                  <img src= "https://res.cloudinary.com/dlimc6j71/image/upload/v1780679318/ChatGPT_Image_Apr_30_2026_02_52_03_PM_wmjbve.png" alt={selected.name} className="w-full h-full object-cover" />
+                  <img src="https://res.cloudinary.com/dlimc6j71/image/upload/v1780679316/mocktails_takpqx.png" alt={selected.name} className="w-full h-full object-cover" />
                   <div className="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent" />
                   <button onClick={() => setSelected(null)} className="absolute top-4 right-4 bg-white/90 text-primary rounded-full w-9 h-9 flex items-center justify-center shadow">✕</button>
                 </div>
