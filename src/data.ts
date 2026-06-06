@@ -3,15 +3,22 @@ import { MenuItem } from './types';
 export const HERO_IMAGE = 'https://lh3.googleusercontent.com/aida-public/AB6AXuDEYQPWxf8kuypVitCWZ5fbYYrtK-xnGnKU1tNnVWnN3w5vepiIWez8nis_oP8clRtKrHqm9UXKu-WbmPfru04_aRAp-M1rec9MgSKzMFyIVaYgcBjdZl8bZwniJb5jiUaNztLE4K3rLqNetBkqojxN_dQ_CKSOTpDmf9LEKp4TtsqpbAgyG_N-28429dSJB7C1O-mWhE_yThB1Q-vBwpUsGZuFgmTN6ldDV-2YjUPtvLAlKtzUChoqnMFN7MIp1WBdLrn7KrvThI2e';
 export const ABOUT_IMAGE = 'https://lh3.googleusercontent.com/aida-public/AB6AXuDGpGuMNVejUYvLsesLZskU1Vp6PS205kToATBc9iq9Bp3HTAqxIte904T1i6kXGgyo3eVb7NXK-o0C2OyHACBQN33jQH0hbNou24TcmJWloGUtK3vWHTZzGgW4cAOU7auXXCwk1o00CBHU586GsgaWl6SD91-qBczSAcMLkSgQYT8SJ7_6mV1-GvyQ_eUiGVdn6MxOi2ZP_gA6jkU5CNPg63Fe7eHdyKW3OIh3_gVa_H09c31UPZUtiVTFFbqrm_Bq_W6T4iTgg1oL';
 
-// To add or update dish images, paste your image URL into the `image` field below.
-// Example: image: 'https://your-image-host.com/your-dish.jpg'
+// Paste your own image URL for each menu item here.
+// Use the named constants below instead of editing each object inline.
+export const GRILLED_CHICKEN_IMAGE = 'https://res.cloudinary.com/dlimc6j71/image/upload/v1780679323/drankss_xhxzlc.png';
+export const WOOD_FIRED_PIZZA_IMAGE = 'https://res.cloudinary.com/dlimc6j71/image/upload/v1780679318/ChatGPT_Image_Apr_30_2026_02_52_03_PM_wmjbve.png';
+export const TRUFFLE_CREAM_PASTA_IMAGE = 'https://res.cloudinary.com/dlimc6j71/image/upload/v1780679315/tandoori_platter_mppd1n.png';
+export const WAGYU_FOREST_BURGER_IMAGE = 'https://res.cloudinary.com/dlimc6j71/image/upload/v1780679314/mango_gi5t8z.png';
+export const FORAGERS_SALAD_IMAGE = 'https://res.cloudinary.com/dlimc6j71/image/upload/v1780679316/mocktails_takpqx.png';
+export const MIDNIGHT_LAVA_CAKE_IMAGE = 'https://res.cloudinary.com/dlimc6j71/image/upload/v1780679318/ChatGPT_Image_Apr_30_2026_02_52_03_PM_wmjbve.png';
+
 export const MENU_ITEMS: MenuItem[] = [
   {
     id: 'm1',
     name: 'Grilled Chicken Steak',
     description: 'Tender organic chicken breast, wild mushroom glaze, served with a side of root vegetable puree.',
     price: 34,
-    image: 'https://lh3.googleusercontent.com/aida-public/AB6AXuDpJtauMkWI0PLAOdPbcXT2IwCc2bZb99toIn80mxpFGaMHkFch9NRDvwI0S1vhE8twgUp4sB_hXydJH8WYNDlUjGchTXubQluGzKoRJIBGv3lwZGPgF_V1MnP4sbpQMuaJ2UlGomLtob8WO_PaMbZOLAShr81_SnuwQKc0iTbpmR-B449DLT4kuFbIbwGoBqbgNFwQmlDsvAPWGEb2PkmgTQkDWd6KCUya6oPgXHHzNHofdYH2-4aUAF0h5oW8vDdew9UgLZ7Gj0f6',
+    image: GRILLED_CHICKEN_IMAGE,
     category: 'main',
     isChefsChoice: true,
     ingredients: ['Organic Chicken Breast', 'Morel & Porcini Glaze', 'Parsnip Purée', 'Baby Heirloom Carrots', 'Microgreens'],
@@ -23,7 +30,7 @@ export const MENU_ITEMS: MenuItem[] = [
     name: 'Wood Fired Pizza',
     description: 'Artisanal sourdough crust baked to perfection in our custom stone oven. Topped with hand-crushed San Marzano tomatoes, fresh buffalo mozzarella, and basil harvested from our indoor garden.',
     price: 28,
-    image: 'https://lh3.googleusercontent.com/aida-public/AB6AXuAYgmbpeJ4xF6wno48vhrqpxKseeNld1ZlqF8ZyQtyOQ1iVB_Dl7Xok7f7S0ho3sJHcS76ekkIWmMaIgrvU_qSBdUR1OQJVdovM87uE7piyhGXYO6h4E1C6oN_AYR-g1-ddn-nxp5DuKsoWhgzsFzQfEDBlm3Y-Z3YadNBnf6qpUdO-tOs9pj13DQLLA3xTGP82H5mnFHbzdFe9zQcpyMmKD3BowRLMuG-4NaOqys2vKGTu3M3BFw_RkLZfPmR1qD6Snsxb_xWhBTnK',
+    image: WOOD_FIRED_PIZZA_IMAGE,
     category: 'pizza-pasta',
     isVegetarian: true,
     ingredients: ['Sourdough Starter Crust', 'San Marzano Tomatoes', 'DOP Buffalo Mozzarella', 'Cold-Pressed Olive Oil', 'Hydrosol-grown Basil'],
@@ -35,7 +42,7 @@ export const MENU_ITEMS: MenuItem[] = [
     name: 'Truffle Cream Pasta',
     description: 'Handmade pappardelle tossed in a rich, earthy black truffle cream sauce with aged parmesan.',
     price: 32,
-    image: 'https://lh3.googleusercontent.com/aida-public/AB6AXuAc3s5BcWQM9rbXNXojCt8AhmSyWEDAypI4edZG1rNmxMIr-W7E2tDVfgkitfrO5qa5Gd_2DNrqbqIIs5DngpOgKv6Ugd-Xg3xWvSqwBnrsBQ_azoi9q2pOOaBJ1scB8jLaB4_z9nBhLlZrxldi9xr5FZQF5aYjZcjeGYd9_x3AMt7x2NmAfWydqvDiT4QlGQJXEI6wpuL1DZtOU5XE0aDDnnOIej8Pj6r_w_Qb8-Z0SE7aTa0pDSsT9PSWAtORMcD4KhOxjLCkMlys',
+    image: TRUFFLE_CREAM_PASTA_IMAGE,
     category: 'pizza-pasta',
     isVegetarian: true,
     ingredients: ['Hand-rolled Semolina Pappardelle', 'Piedmont Black Truffle Paste', 'Double Cream', '36-Month Aged Parmigiano-Reggiano', 'White Truffle Oil'],
@@ -47,7 +54,7 @@ export const MENU_ITEMS: MenuItem[] = [
     name: 'Wagyu Forest Burger',
     description: 'Premium Wagyu beef patty, caramelized onions, smoked gouda, and our signature herb aioli.',
     price: 29,
-    image: 'https://lh3.googleusercontent.com/aida-public/AB6AXuD50kk8tEeH3kdP9e29HL8S3Xx8O-8RnX0DM-zSUX7QgaXD_Z0ipxV9MqCbiAeNFyXeqqi6otJm8J37vPMgaNzc3tLYSAtjaLUtIwJ2wPnE6Tv2yGEAmFh4ky9gNSSN7kvQHCeYnRiSmXb0oG4ipxItwxCyKBBjbz6I83mwnLpDfIC2JiVXFoAzz7RpoNrdsuYIRbSitOq_zyt4Rb3AOkeeba-lvfEhxV_SAzFCoo7gd2Q9d7YrO6uLjYnElLOlLbDupCQKXqFaxivF',
+    image: WAGYU_FOREST_BURGER_IMAGE,
     category: 'main',
     ingredients: ['A5 Wagyu Beef Blend', 'Forest Honey Caramelized Onions', 'Applewood Smoked Gouda', 'Wild Ramp Aioli', 'Toasted Brioche Bun'],
     allergens: ['Gluten', 'Dairy', 'Eggs'],
@@ -58,7 +65,7 @@ export const MENU_ITEMS: MenuItem[] = [
     name: "Forager's Salad",
     description: 'A vibrant mix of seasonal greens, roasted nuts, edible flowers, and a light citrus vinaigrette.',
     price: 22,
-    image: 'https://lh3.googleusercontent.com/aida-public/AB6AXuDIZ1YL3xErJfiDKewJ9jqoI2f2gykVx3WNtYlDXsuZ5OeJF_grtv5zcaDHeqZI-dlQipt2hsC5c-FkTIGhLonPtTFmOiD9WXSI3AG0W5cys6kDWmYbcDcFQein-y3vVFMvyTKaszWDZ4cvZKNUA_tV2Xy0Pe20j5VSvNx1Quh7jpFUNU0rT_XNdwtNI_fheyhAQI8CKeQqxMAiRHITw7W8wGrCegkd5hysZP39XZGwe7CFFN7LYWIvnPAkbIsF3-fFLBeaFYBQlyni',
+    image: FORAGERS_SALAD_IMAGE,
     category: 'salad',
     isVegan: true,
     ingredients: ['Wild Foraged Watercress', 'Dandelion Greens', 'Shaved Heirloom Radishes', 'Candied Pine Nuts', 'Edible Marigolds & Pansies', 'Meyer Lemon Vinaigrette'],
@@ -70,7 +77,7 @@ export const MENU_ITEMS: MenuItem[] = [
     name: 'Midnight Lava Cake',
     description: 'Decadent dark chocolate cake with a molten center, served with house-made vanilla bean ice cream.',
     price: 18,
-    image: 'https://lh3.googleusercontent.com/aida-public/AB6AXuD46jp-w8gDDiZgKlQ-QSrZxmCY4SFm0oiO1CHkG8FEy9m8Mi1Z469MTKHUUIb8b58xggMW3vFEaUr0NFAT8iPzBXBXYI5ETSt3OXV1ZY_D9VTT2KlAlZ6-XVccHdGjIADur3eJzpP_8xW7z2F2E5M5AtM-Y31P1Bz4dCljXEf9cdpMhr2GpWXY57f0CD-iWGNnGbG_rVtnjh0CuZK1lIlY6qeeCvXKqWkY7tf0C_tXIKrRRrwYwLZyj2BtwHDKpaoVWA57swWWQZwq',
+    image: MIDNIGHT_LAVA_CAKE_IMAGE,
     category: 'dessert',
     ingredients: ['72% Single-Origin Valrhona Chocolate', 'Organic Butter', 'Free-Range Eggs', 'Madagascar Bourbon Vanilla Bean'],
     allergens: ['Dairy', 'Eggs', 'Gluten'],
