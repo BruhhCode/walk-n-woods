@@ -19,7 +19,7 @@ export default function Hero({ onNavigate }: HeroProps) {
       }}
     >
       {/* Dynamic Forest Fog Tint Overlay */}
-      <div className="absolute inset-0 bg-primary/45 backdrop-blur-[6px]" />
+      <div className="absolute inset-0 bg-primary/45 backdrop-blur-[6 px]" />
 
       {/* Hero content card */}
       <div className="relative z-10 text-center px-6 max-w-4xl mx-auto flex flex-col items-center gap-8 bg-surface-container/95 rounded-[3rem] p-10 shadow-2xl border border-primary-container/20">
@@ -42,10 +42,10 @@ export default function Hero({ onNavigate }: HeroProps) {
           initial={{ opacity: 0, scale: 0.95 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 1.2, ease: [0.16, 1, 0.3, 1] }}
-          className="font-serif text-5xl md:text-7xl text-white font-bold text-primary tracking-tight leading-[1.1] select-none"
+          className="font-serif text-5xl md:text-7xl text-white font-bold tracking-tight leading-[1.1] select-none"
         >
           Where Great Food <br />
-          <span className="font-serif text-white italic font-light text-secondary tracking-wide">
+          <span className="font-serif text-white/90 italic font-light tracking-wide">
             Meets Nature
           </span>
         </motion.h1>
