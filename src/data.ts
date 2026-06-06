@@ -3,6 +3,8 @@ import { MenuItem } from './types';
 export const HERO_IMAGE = 'https://lh3.googleusercontent.com/aida-public/AB6AXuDEYQPWxf8kuypVitCWZ5fbYYrtK-xnGnKU1tNnVWnN3w5vepiIWez8nis_oP8clRtKrHqm9UXKu-WbmPfru04_aRAp-M1rec9MgSKzMFyIVaYgcBjdZl8bZwniJb5jiUaNztLE4K3rLqNetBkqojxN_dQ_CKSOTpDmf9LEKp4TtsqpbAgyG_N-28429dSJB7C1O-mWhE_yThB1Q-vBwpUsGZuFgmTN6ldDV-2YjUPtvLAlKtzUChoqnMFN7MIp1WBdLrn7KrvThI2e';
 export const ABOUT_IMAGE = 'https://lh3.googleusercontent.com/aida-public/AB6AXuDGpGuMNVejUYvLsesLZskU1Vp6PS205kToATBc9iq9Bp3HTAqxIte904T1i6kXGgyo3eVb7NXK-o0C2OyHACBQN33jQH0hbNou24TcmJWloGUtK3vWHTZzGgW4cAOU7auXXCwk1o00CBHU586GsgaWl6SD91-qBczSAcMLkSgQYT8SJ7_6mV1-GvyQ_eUiGVdn6MxOi2ZP_gA6jkU5CNPg63Fe7eHdyKW3OIh3_gVa_H09c31UPZUtiVTFFbqrm_Bq_W6T4iTgg1oL';
 
+// To add or update dish images, paste your image URL into the `image` field below.
+// Example: image: 'https://your-image-host.com/your-dish.jpg'
 export const MENU_ITEMS: MenuItem[] = [
   {
     id: 'm1',
