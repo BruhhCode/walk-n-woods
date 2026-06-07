@@ -88,17 +88,17 @@ export const MENU_ITEMS: MenuItem[] = [
 export const STORIES = [
   {
     id: 's1',
-    title: 'The Organic Garden',
-    description: 'Our herbs, blossoms, and specific greens are cultivated inside or surrounding the restaurant bounds, utilizing zero-waste water recycling systems.'
+    title: 'The Cabana Dining',
+    description: 'Escape into the comfort of our beautifully designed cabanas. Featuring cozy seating and refreshing mist cooling during summers, they offer the perfect setting for intimate dinners, celebrations, and special occasions.'
   },
   {
     id: 's2',
-    title: 'Modern Hearth & Stone',
-    description: 'We roast and bake over custom lava stones and local hand-cut almond wood, giving a precise aromatic woody warmth to all pizzas, steaks, and bread crusts.'
+    title: 'Signature Cuisine',
+    description: 'Our menu brings together timeless favorites and innovative creations, crafted with quality ingredients and served with passion. Every dish reflects the commitment to taste and hospitality that has defined Walk N Woods for over a decade.'
   },
   {
     id: 's3',
-    title: 'The Clean Philosophy',
-    description: 'Quiet Luxury is about purity. No synthetic flavor enhancers, no processed sugars—only pure Himalayan minerals, raw California honeys, wild oils, and pristine natural salts.'
+    title: 'Family Dining, Elevated',
+    description: 'For over a decade, Walk N Woods has been bringing families and friends together over exceptional food and memorable experiences. From intimate dinners to joyful celebrations, every visit is crafted with warm hospitality, elegant ambiance, and flavors that leave a lasting impression.'
   }
 ];
