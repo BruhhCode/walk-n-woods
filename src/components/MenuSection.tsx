@@ -45,7 +45,7 @@ export default function MenuSection(_: MenuSectionProps) {
             <div className="fixed inset-0 z-50 flex items-center justify-center p-4">
               <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }} onClick={() => setSelected(null)} className="absolute inset-0 bg-primary/60 backdrop-blur-sm" />
 
-              <motion.div initial={{ opacity: 0, scale: 0.98, y: 10 }} animate={{ opacity: 1, scale: 1, y: 0 }} exit={{ opacity: 0, scale: 0.98, y: 10 }} transition={{ duration: 0.25 }} className="relative bg-surface-container rounded-3xl w-full max-w-3xl overflow-hidden shadow-2xl border border-primary-container/10">
+              <motion.div initial={{ opacity: 0, scale: 0.98, y: 10 }} animate={{ opacity: 1, scale: 1, y: 0 }} exit={{ opacity: 0, scale: 0.98, y: 10 }} transition={{ duration: 0.25 }} className="relative bg-surface-container rounded-5xl w-full max-w-3xl overflow-hidden shadow-2xl border border-primary-container/10">
                 <div className="relative h-80">
                   <img src={selected.image} alt={selected.name} className="w-full h-full object-cover" />
                   <button onClick={() => setSelected(null)} className="absolute top-4 right-4 bg-white/90 text-primary rounded-full w-9 h-9 flex items-center justify-center shadow">✕</button>
