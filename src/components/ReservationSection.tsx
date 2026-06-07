@@ -16,7 +16,7 @@ export default function ReservationSection({ lookupTrigger, onResetLookupTrigger
   const [date, setDate] = useState('');
   const [time, setTime] = useState('');
   const [guests, setGuests] = useState(2);
-  const [seatingPref, setSeatingPref] = useState<'window' | 'fireplace' | 'forest' | 'glass-roof' | 'no-preference'>('no-preference');
+  const [seatingPref, setSeatingPref] = useState<'window' | 'The Cabana' | 'Restaurant' | 'glass-roof' | 'no-preference'>('no-preference');
   const [specialRequests, setSpecialRequests] = useState('');
   const [dietary, setDietary] = useState<string[]>([]);
 

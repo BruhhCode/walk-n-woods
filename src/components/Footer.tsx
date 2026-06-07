@@ -9,7 +9,7 @@ interface FooterProps {
 export default function Footer({ onNavigate }: FooterProps) {
   const [subEmail, setSubEmail] = useState('');
   const [subSuccess, setSubSuccess] = useState(false);
-  const [shareSuccess, setShareSuccess] = useState(false);
+  
 
   // Scroll smooth to top helper
   const scrollToTop = () => {
@@ -32,12 +32,10 @@ export default function Footer({ onNavigate }: FooterProps) {
   };
 
   // Copy app link to clipboard (using the runtime page URL)
-  const handleCopyShareLink = () => {
-    const currentUrl = window.location.href;
-    navigator.clipboard.writeText(currentUrl).then(() => {
-      setShareSuccess(true);
-      setTimeout(() => setShareSuccess(false), 3000);
-    });
+  // Open Instagram in a new tab
+  const handleOpenInstagram = () => {
+    const instagramUrl = 'https://www.instagram.com/walkinwoodsfinedine/';
+    window.open(instagramUrl, '_blank', 'noopener,noreferrer');
   };
 
   return (
@@ -63,15 +61,15 @@ export default function Footer({ onNavigate }: FooterProps) {
             {/* Quick social sharing action sheet */}
             <div className="flex gap-3">
               <button
-                onClick={handleCopyShareLink}
+                onClick={handleOpenInstagram}
                 className="w-10 h-10 rounded-xl bg-surface-container border border-primary-container/10 flex items-center justify-center text-secondary hover:text-white hover:bg-secondary transition-all cursor-pointer shadow-sm relative group"
-                aria-label="Copy tasting menu share link"
+                aria-label="Open Instagram"
               >
-                {shareSuccess ? <Check className="w-4 h-4 text-green-600 group-hover:text-white" /> : <Share2 className="w-4 h-4" />}
-                
+                <ExternalLink className="w-4 h-4" />
+
                 {/* Micro tooltip */}
                 <span className="absolute -top-10 left-1/2 -translate-x-1/2 bg-primary text-white text-[10px] py-1.5 px-3 rounded-lg opacity-0 group-hover:opacity-100 transition-opacity whitespace-nowrap pointer-events-none shadow-md z-10">
-                  {shareSuccess ? 'Copied Link!' : 'Share Menu Link'}
+                  Visit Instagram
                 </span>
               </button>
 

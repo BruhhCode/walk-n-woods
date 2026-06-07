@@ -7,7 +7,6 @@ import Header from './components/Header';
 import Hero from './components/Hero';
 import About from './components/About';
 import MenuSection from './components/MenuSection';
-import ReservationSection from './components/ReservationSection';
 import Footer from './components/Footer';
 import CartDrawer from './components/CartDrawer';
 
@@ -100,29 +99,6 @@ export default function App() {
         onOpenCart={() => setIsCartOpen(true)}
       />
 
-      {/* Reservation dates booker engine */}
-      <ReservationSection
-        lookupTrigger={lookupTrigger}
-        onResetLookupTrigger={() => setLookupTrigger(false)}
-      />
-
-      {/* Foot segment coordinates & subscriptions */}
-      <Footer onNavigate={scrollToSection} />
-
-      {/* Slide Drawer Tasting Pre-Basket */}
-      <AnimatePresence>
-        {isCartOpen && (
-          <CartDrawer
-            isOpen={isCartOpen}
-            onClose={() => setIsCartOpen(false)}
-            cart={cart}
-            onAddToCart={handleAddToCart}
-            onRemoveFromCart={handleRemoveFromCart}
-            onClearCart={handleClearCart}
-            onNavigateToBooking={() => scrollToSection('reservations')}
-          />
-        )}
-      </AnimatePresence>
     </div>
   );
 }
