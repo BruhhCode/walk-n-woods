@@ -109,25 +109,25 @@ export default function Header({ cart, onOpenCart, onNavigate, onOpenBookingsLoo
             <div className="flex flex-col gap-6 font-sans text-lg font-medium text-center">
               <button
                 onClick={() => handleLinkClick('hero')}
-                className="py-3 text-primary border-b border-primary-container/10 hover:text- #1C3B23 "
+                className="py-3 text-white border-b border-primary-container/10 hover:text-secondary "
               >
                 Home
               </button>
               <button
                 onClick={() => handleLinkClick('about')}
-                className="py-3 text-primary border-b border-primary-container/10 hover: text- #1C3B23 "
+                className="py-3 text-white border-b border-primary-container/10 hover:text-secondary"
               >
                 Our Story
               </button>
               <button
                 onClick={() => handleLinkClick('menu')}
-                className="py-3 text-primary border-b border-primary-container/10 hover: text- #1C3B23 "
+                className="py-3 text-white border-b border-primary-container/10 hover:text-secondary"
               >
                 Menu
               </button>
               <button
                 onClick={() => handleLinkClick('reservations')}
-                className="py-3 text-primary border-b border-primary-container/10 hover: text- #1C3B23 "
+                className="py-3 text-white border-b border-primary-container/10 hover:text-secondary"
               >
                 Reservations
               </button>
@@ -136,7 +136,7 @@ export default function Header({ cart, onOpenCart, onNavigate, onOpenBookingsLoo
                   setMobileMenuOpen(false);
                   onOpenBookingsLookup();
                 }}
-                className="py-3 text-secondary hover:text-primary transition-colors font-semibold"
+                className="py-3 text-white hover:text-secondary transition-colors font-semibold"
               >
                 My Bookings Lookup
               </button>
