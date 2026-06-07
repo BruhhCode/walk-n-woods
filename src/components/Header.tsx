@@ -66,19 +66,19 @@ export default function Header({ cart, onOpenCart, onNavigate, onOpenBookingsLoo
           <div className="hidden md:flex items-center gap-8 font-sans font-medium text-sm">
             <button
               onClick={() => handleLinkClick('hero')}
-              className="text-primary hover:text- #1C3B23 tracking-tight leading-[1.1] select-none transition-all cursor-pointer font-semibold relative after:absolute after:bottom-[-4px] after:left-0 after:w-0 hover:after:w-full after:h-[1px] after:bg-secondary after:transition-all"
+              className="text-white hover:text-secondary tracking-tight leading-[1.1] select-none transition-all cursor-pointer font-semibold relative after:absolute after:bottom-[-4px] after:left-0 after:w-0 hover:after:w-full after:h-[1px] after:bg-secondary after:transition-all"
             >
               Home
             </button>
             <button
               onClick={() => handleLinkClick('about')}
-              className="text-on-surface-variant hover:text- #1C3B23 tracking-tight leading-[1.1] select-none transition-all cursor-pointer relative after:absolute after:bottom-[-4px] after:left-0 after:w-0 hover:after:w-full after:h-[1px] after:bg-primary after:transition-all"
+              className="text-white hover:text-secondary tracking-tight leading-[1.1] select-none transition-all cursor-pointer relative after:absolute after:bottom-[-4px] after:left-0 after:w-0 hover:after:w-full after:h-[1px] after:bg-secondary after:transition-all"
             >
               Our Story
             </button>
             <button
               onClick={() => handleLinkClick('menu')}
-              className="text-on-surface-variant hover:text- #1C3B23 tracking-tight leading-[1.1] select-none transition-all cursor-pointer relative after:absolute after:bottom-[-4px] after:left-0 after:w-0 hover:after:w-full after:h-[1px] after:bg-primary after:transition-all"
+              className="text-white hover:text-secondary tracking-tight leading-[1.1] select-none transition-all cursor-pointer relative after:absolute after:bottom-[-4px] after:left-0 after:w-0 hover:after:w-full after:h-[1px] after:bg-secondary after:transition-all"
             >
               Menu
             </button>
@@ -89,7 +89,7 @@ export default function Header({ cart, onOpenCart, onNavigate, onOpenBookingsLoo
             {/* Mobile Menu Icon */}
             <button
               onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-              className="md:hidden p-2 text-primary hover:text-secondary transition-colors cursor-pointer"
+              className="md:hidden p-2 text-white hover:text-secondary transition-colors cursor-pointer"
             >
               {mobileMenuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
             </button>
