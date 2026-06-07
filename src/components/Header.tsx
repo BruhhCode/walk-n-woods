@@ -72,38 +72,19 @@ export default function Header({ cart, onOpenCart, onNavigate, onOpenBookingsLoo
             </button>
             <button
               onClick={() => handleLinkClick('about')}
-              className="text-on-surface-variant hover:text-primary tracking-tight leading-[1.1] select-none transition-all cursor-pointer relative after:absolute after:bottom-[-4px] after:left-0 after:w-0 hover:after:w-full after:h-[1px] after:bg-primary after:transition-all"
+              className="text-on-surface-variant hover:text-secondary tracking-tight leading-[1.1] select-none transition-all cursor-pointer relative after:absolute after:bottom-[-4px] after:left-0 after:w-0 hover:after:w-full after:h-[1px] after:bg-primary after:transition-all"
             >
               Our Story
             </button>
             <button
               onClick={() => handleLinkClick('menu')}
-              className="text-on-surface-variant hover:text-primary tracking-tight leading-[1.1] select-none transition-all cursor-pointer relative after:absolute after:bottom-[-4px] after:left-0 after:w-0 hover:after:w-full after:h-[1px] after:bg-primary after:transition-all"
+              className="text-on-surface-variant hover:text-secondary tracking-tight leading-[1.1] select-none transition-all cursor-pointer relative after:absolute after:bottom-[-4px] after:left-0 after:w-0 hover:after:w-full after:h-[1px] after:bg-primary after:transition-all"
             >
               Menu
             </button>
-            <button
-              onClick={() => handleLinkClick('reservations')}
-              className="text-on-surface-variant hover:text-primary tracking-tight leading-[1.1] select-none transition-all cursor-pointer relative after:absolute after:bottom-[-4px] after:left-0 after:w-0 hover:after:w-full after:h-[1px] after:bg-primary after:transition-all"
-            >
-              Reservations
-            </button>
-            <button
-              onClick={onOpenBookingsLookup}
-              className="text-secondary hover:text-primary tracking-tight leading-[1.1] select-none transition-all cursor-pointer relative font-semibold"
-            >
-              Find Booking
-            </button>
+           
           </div>
 
-            {/* Book A Table Premium Button */}
-            <button
-              onClick={() => handleLinkClick('reservations')}
-              className="hidden md:flex items-center gap-2 bg-primary text-white font-sans text-xs uppercase tracking-wider font-semibold py-3 px-6 rounded-lg hover:bg-secondary hover:shadow-lg hover:scale-[1.02] active:scale-[0.98] transition-all duration-300 cursor-pointer"
-            >
-              <Calendar className="w-4 h-4 text-inverse-primary" />
-              Book A Table
-            </button>
 
             {/* Mobile Menu Icon */}
             <button

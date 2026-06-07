@@ -64,15 +64,7 @@ export default function Hero({ onNavigate }: HeroProps) {
             <Compass className="w-4 h-4 text-inverse-primary group-hover:rotate-45 transition-transform duration-500" />
             Explore Menu
           </button>
-          <button
-            onClick={() => onNavigate('reservations')}
-            className="flex items-center justify-center gap-2 bg-secondary text-white font-sans font-bold text-sm uppercase tracking-wider px-8 py-4 rounded-xl hover:bg-primary hover:shadow-2xl transition-all duration-300 cursor-pointer group"
-
->
-            <Flame className="w-4 h-4 text-inverse-primary group-hover:scale-110 transition-transform" />
-            Reserve a Table
-          </button>
-        </motion.div>
+          </motion.div>
 
         {/* Scroll cues */}
         <motion.button
