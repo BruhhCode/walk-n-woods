@@ -49,8 +49,8 @@ export default function Header({ cart, onOpenCart, onNavigate, onOpenBookingsLoo
             onClick={() => handleLinkClick('hero')}
             className="flex items-center gap-3 group text-left cursor-pointer"
           >
-            <div className="w-10 h-10 rounded-full bg-primary-container flex items-center justify-center text-inverse-primary shadow-inner group-hover:scale-105 transition-all duration-300">
-              <img src="https://res.cloudinary.com/dlimc6j71/image/upload/v1780811213/W_-_1_1_kwd3la.png" alt="Walk n Woods" className="w-6 h-6" />
+            <div className="w-10 h-10 rounded-full bg-primary flex items-center justify-center text-inverse-primary shadow-inner group-hover:scale-105 transition-all duration-300">
+              <img src="https://res.cloudinary.com/dlimc6j71/image/upload/v1780811213/W_-_1_1_kwd3la.png" alt="Walk n Woods" className="w-6 h-6 object-contain" />
             </div>
             <div>
               <span className="font-serif text-xl md:text-2xl font-bold text-primary tracking-wide block leading-none text-white tracking-tight leading-[1.1] drop-shadow-md select-none">
