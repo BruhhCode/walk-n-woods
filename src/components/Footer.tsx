@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { motion, AnimatePresence } from 'motion/react';
-import { Share2, Mail, ExternalLink, ArrowUp, Check, ShieldCheck, Leaf } from 'lucide-react';
+import { Mail, ArrowUp, Check, ShieldCheck, Leaf } from 'lucide-react';
 
 interface FooterProps {
   onNavigate: (sectionId: string) => void;
@@ -65,7 +65,9 @@ export default function Footer({ onNavigate }: FooterProps) {
                 className="w-10 h-10 rounded-xl bg-surface-container border border-primary-container/10 flex items-center justify-center text-secondary hover:text-white hover:bg-secondary transition-all cursor-pointer shadow-sm relative group"
                 aria-label="Open Instagram"
               >
-                <ExternalLink className="w-4 h-4" />
+                <svg xmlns="https://res.cloudinary.com/dlimc6j71/image/upload/v1780815756/instagram-logo-thin-svgrepo-com_nowful.svg" viewBox="0 0 24 24" className="w-4 h-4" fill="currentColor" aria-hidden="true">
+                  <path d="M7 2C4.243 2 2 4.243 2 7v10c0 2.757 2.243 5 5 5h10c2.757 0 5-2.243 5-5V7c0-2.757-2.243-5-5-5H7zm0 2h10a3 3 0 0 1 3 3v10a3 3 0 0 1-3 3H7a3 3 0 0 1-3-3V7a3 3 0 0 1 3-3zm5 3.5a4.5 4.5 0 1 0 0 9 4.5 4.5 0 0 0 0-9zm0 2a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5zM17.5 6a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/>
+                </svg>
 
                 {/* Micro tooltip */}
                 <span className="absolute -top-10 left-1/2 -translate-x-1/2 bg-primary text-white text-[10px] py-1.5 px-3 rounded-lg opacity-0 group-hover:opacity-100 transition-opacity whitespace-nowrap pointer-events-none shadow-md z-10">
