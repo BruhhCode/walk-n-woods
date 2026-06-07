@@ -9,7 +9,7 @@ export interface MenuItem {
   description: string;
   price: number;
   image: string;
-  category: 'main' | 'pizza-pasta' | 'salad' | 'dessert';
+  category: 'main' | 'Italian' | 'salad' | 'dessert' | 'drinks';
   isChefsChoice?: boolean;
   isVegan?: boolean;
   isVegetarian?: boolean;
@@ -27,7 +27,7 @@ export interface Reservation {
   date: string;
   time: string;
   guests: number;
-  seatingPreference: 'window' | 'forest' | 'fireplace' | 'glass-roof' | 'no-preference';
+  seatingPreference: 'window' | 'The Cabana' | 'Restaurant' | 'glass-roof' | 'no-preference';
   specialRequests?: string;
   dietaryRestrictions: string[];
   createdAt: string;
