@@ -6,7 +6,7 @@ export const ABOUT_IMAGE = 'https://lh3.googleusercontent.com/aida-public/AB6AXu
 // Paste your own image URL for each menu item here.
 // Use the named constants below instead of editing each object inline.
 export const Watermelon_Mojito = 'https://res.cloudinary.com/dlimc6j71/image/upload/v1780679323/drankss_xhxzlc.png';
-export const WOOD_FIRED_PIZZA_IMAGE = 'https://res.cloudinary.com/dlimc6j71/image/upload/v1780679318/ChatGPT_Image_Apr_30_2026_02_52_03_PM_wmjbve.png';
+export const CHOCO_BROWNIE_IMAGE = 'https://res.cloudinary.com/dlimc6j71/image/upload/v1780679318/ChatGPT_Image_Apr_30_2026_02_52_03_PM_wmjbve.png';
 export const TRUFFLE_CREAM_PASTA_IMAGE = 'https://res.cloudinary.com/dlimc6j71/image/upload/v1780679315/tandoori_platter_mppd1n.png';
 export const WAGYU_FOREST_BURGER_IMAGE = 'https://res.cloudinary.com/dlimc6j71/image/upload/v1780679314/mango_gi5t8z.png';
 export const FORAGERS_SALAD_IMAGE = 'https://res.cloudinary.com/dlimc6j71/image/upload/v1780679316/mocktails_takpqx.png';
@@ -15,7 +15,7 @@ export const MIDNIGHT_LAVA_CAKE_IMAGE = 'https://res.cloudinary.com/dlimc6j71/im
 export const MENU_ITEMS: MenuItem[] = [
   {
     id: 'm1',
-    name: 'Watermelon_Mojito',
+    name: 'Watermelon Mojito',
     description: 'A refreshing blend of fresh watermelon, mint leaves, zesty lime, and sparkling water, served over crushed ice.',
     price: 34,
     image: Watermelon_Mojito,
@@ -27,15 +27,15 @@ export const MENU_ITEMS: MenuItem[] = [
   },
   {
     id: 'm2',
-    name: 'Wood Fired Pizza',
-    description: 'Artisanal sourdough crust baked to perfection in our custom stone oven. Topped with hand-crushed San Marzano tomatoes, fresh buffalo mozzarella, and basil harvested from our indoor garden.',
+    name: 'Choco Brownie with Vanilla Ice Cream',
+    description: 'A warm chocolate brownie served on a sizzling skillet, topped with creamy vanilla ice cream and finished with rich chocolate drizzle.',
     price: 28,
-    image: WOOD_FIRED_PIZZA_IMAGE,
-    category: 'Italian',
+    image: CHOCO_BROWNIE_IMAGE,
+    category: 'dessert',
     isVegetarian: true,
-    ingredients: ['Sourdough Starter Crust', 'San Marzano Tomatoes', 'DOP Buffalo Mozzarella', 'Cold-Pressed Olive Oil', 'Hydrosol-grown Basil'],
+    ingredients: ['Chocolate Brownie', 'Vanilla Ice Cream', 'Chocolate Sauce', 'Roasted Nuts', 'Butter', 'Sugar', 'Eggs', 'Flour'],
     allergens: ['Gluten', 'Dairy'],
-    sourcing: 'Sourdough flour is stone-milled in CA. Mozzarella is prepared fresh daily by local artisanal cheesemakers. Basil is clipped straight from our dining room indoor garden wall.'
+    sourcing: 'Freshly baked in-house using premium cocoa, rich dairy, and carefully selected ingredients for an indulgent dessert experience.'
   },
   {
     id: 'm3',

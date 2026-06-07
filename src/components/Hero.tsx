@@ -18,8 +18,8 @@ export default function Hero({ onNavigate }: HeroProps) {
         backgroundAttachment: 'fixed',
       }}
     >
-      {/* Dynamic Forest Fog Tint Overlay */}
-      <div className="absolute inset-0 bg-primary/45 backdrop-blur-[10px]" ></div>
+      {/* Dynamic Forest Fog Tint Overlay (subtle) */}
+      <div className="absolute inset-0 bg-primary/12 backdrop-blur-sm pointer-events-none" />
 
       {/* Hero content card */}
       <div className="relative z-10 text-center px-6 max-w-4xl mx-auto flex flex-col items-center gap-8 bg-surface-container/95 rounded-[3rem] p-10 shadow-2xl border border-primary-container/20">
