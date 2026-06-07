@@ -77,7 +77,7 @@ export default function Footer({ onNavigate }: FooterProps) {
 
               <button
                 onClick={() => {
-                  window.location.href = 'mailto:reservations@walknwoods.com?subject=Inquiry';
+                  window.location.href = 'mailto:walkinwoodsfinedine@gmail.com?subject=Inquiry';
                 }}
                 className="w-10 h-10 rounded-xl bg-surface-container border border-primary-container/10 flex items-center justify-center text-secondary hover:text-white hover:bg-primary transition-all cursor-pointer shadow-sm group relative"
                 aria-label="Mailing support"
