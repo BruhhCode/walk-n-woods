@@ -128,25 +128,25 @@ export default function Header({ cart, onOpenCart, onNavigate, onOpenBookingsLoo
             <div className="flex flex-col gap-6 font-sans text-lg font-medium text-center">
               <button
                 onClick={() => handleLinkClick('hero')}
-                className="py-3 text-primary border-b border-primary-container/10 hover:text-secondary transition-colors:text- #1C3B23 "
+                className="py-3 text-primary border-b border-primary-container/10 hover:text- #1C3B23 "
               >
                 Home
               </button>
               <button
                 onClick={() => handleLinkClick('about')}
-                className="py-3 text-primary border-b border-primary-container/10 hover:text-secondary transition-colors: text- #1C3B23 "
+                className="py-3 text-primary border-b border-primary-container/10 hover: text- #1C3B23 "
               >
                 Our Story
               </button>
               <button
                 onClick={() => handleLinkClick('menu')}
-                className="py-3 text-primary border-b border-primary-container/10 hover:text-secondary transition-colors: text- #1C3B23 "
+                className="py-3 text-primary border-b border-primary-container/10 hover: text- #1C3B23 "
               >
                 Menu
               </button>
               <button
                 onClick={() => handleLinkClick('reservations')}
-                className="py-3 text-primary border-b border-primary-container/10 hover:text-secondary transition-colors: text- #1C3B23 "
+                className="py-3 text-primary border-b border-primary-container/10 hover: text- #1C3B23 "
               >
                 Reservations
               </button>
