@@ -30,7 +30,7 @@ export default function About({ onNavigate }: AboutProps) {
               className="relative rounded-2xl overflow-hidden shadow-2xl h-[450px] md:h-[550px]"
             >
               <img
-                src={ABOUT_IMAGE}
+                src= 'https://res.cloudinary.com/dlimc6j71/image/upload/v1780811213/w_59_uys0ra.png'
                 alt="Walk n Woods sunlit rustic corner table detailing organic minimalism"
                 className="w-full h-full object-cover tracking-tight hover:scale-105 transition-transform duration-1000"
               />
@@ -40,11 +40,11 @@ export default function About({ onNavigate }: AboutProps) {
                 <div className="flex items-center gap-2 text-primary">
                   <MapPin className="w-4 h-4 text-secondary" />
                   <span className="font-sans text-xs uppercase tracking-widest font-bold text-black">
-                    The Fireplace Alcove
+                    The Cabana
                   </span>
                 </div>
                 <p className="font-sans text-xs text-black/80 leading-relaxed">
-                  Our raw oak hardwood tables sit alongside handcrafted stone fireplaces and living forest moss installations.
+                 Enjoy an exclusive open-air dining experience with elegant cabana seating, refreshing mist cooling, and a relaxing ambiance that transforms every meal into a memorable occasion.
                 </p>
               </div>
             </motion.div>
@@ -72,14 +72,14 @@ export default function About({ onNavigate }: AboutProps) {
                 Our Story
               </span>
               <h2 className="font-serif text-3xl md:text-5xl font-bold text-primary tracking-tight leading-tight select-none">
-                A Sanctuary for the Senses
+                A Legacy of Fine Dining Since 2011
               </h2>
             </div>
 
             <p className="font-sans text-base md:text-lg text-on-surface-variant leading-relaxed select-none">
-              At Walk n Woods, we believe that dining should be an immersive experience that grounds you
-              in the present moment. Born from a desire to bring the serenity of the fine dining experience to the table,
-              our restaurant offers a quiet retreat from the urban bustle.
+              At Walk N Woods, we have been creating memorable dining experiences in Dehradun since 2011. 
+              From elegant fine dining and open-air rooftop seating to our signature cabana experience, every corner is designed to bring people together over exceptional food, warm hospitality, and unforgettable moments.
+               More than just a restaurant, Walk N Woods is a destination where great flavors and cherished memories come to life.
             </p>
 
             {/* Interactive Story Tabs */}
