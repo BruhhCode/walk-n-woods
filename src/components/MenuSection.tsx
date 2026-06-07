@@ -18,8 +18,8 @@ export default function MenuSection(_: MenuSectionProps) {
       <div className="max-w-6xl mx-auto px-6 md:px-8">
         <div className="text-center mb-12">
           <span className="font-sans text-xs text-secondary uppercase tracking-[0.25em] font-bold block">The Menu</span>
-          <h2 className="font-serif text-3xl md:text-5xl font-bold text-primary tracking-tight">Visual Gallery</h2>
-          <p className="font-sans text-base text-on-surface-variant max-w-2xl mx-auto leading-relaxed mt-2">A curated gallery of our signature dishes — tap any image to view full size.</p>
+          <h2 className="font-serif text-3xl md:text-5xl font-bold text-primary tracking-tight">Curated Culinary Collection</h2>
+          <p className="font-sans text-base text-on-surface-variant max-w-2xl mx-auto leading-relaxed mt-2">An exclusive showcase of signature dishes, handcrafted drinks, and indulgent desserts that capture the essence of fine dining at Walk N Woods.</p>
         </div>
 
         <motion.div layout className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-6">

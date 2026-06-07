@@ -58,7 +58,7 @@ export default function About({ onNavigate }: AboutProps) {
               className="absolute -top-6 -right-6 lg:-right-10 bg-primary shadow-xl rounded-2xl p-5 border border-primary-container flex flex-col items-center gap-1 max-w-[140px] text-center hidden sm:flex text-white tracking-tight leading-[1.1] drop-shadow-md select-none"
             >
               <Award className="w-8 h-8 text-inverse-primary animate-pulse tracking-tight leading-[1.1] drop-shadow-md select-none" />
-              <span className="font-serif text-sm font-semibold text-black">Top Fine Dining</span>
+              <span className="font-serif text-sm font-semibold text-white">Top Fine Dining</span>
               <span className="font-sans text-[9px] text-inverse-primary tracking-widest uppercase font-bold tracking-tight leading-[1.1] drop-shadow-md select-none">
                 Dehradun 2011
               </span>
