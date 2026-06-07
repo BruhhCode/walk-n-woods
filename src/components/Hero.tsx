@@ -44,9 +44,9 @@ export default function Hero({ onNavigate }: HeroProps) {
           transition={{ duration: 1.2, ease: [0.16, 1, 0.3, 1] }}
           className="font-serif text-5xl md:text-7xl text-white font-bold tracking-tight leading-[1.1] select-none"
         >
-          Where Great Food <br />
+          Where Every Meal Becomes <br />
           <span className="font-serif text-white/90 italic font-light tracking-wide">
-            Meets Nature
+            a Memory
           </span>
         </motion.h1>
 

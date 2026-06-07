@@ -147,8 +147,7 @@ export default function About({ onNavigate }: AboutProps) {
                 onClick={() => onNavigate('reservations')}
                 className="inline-flex items-center gap-2 text-primary font-bold font-sans text-sm tracking-wider hover:gap-3 transition-all group cursor-pointer"
               >
-                <span>Reserve Cozy Corner</span>
-                <Compass className="w-4 h-4 text-white group-hover:rotate-45 transition-transform duration-500" />
+                
               </button>
             </div>
           </div>
