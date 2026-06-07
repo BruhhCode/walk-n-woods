@@ -56,7 +56,7 @@ export default function Header({ cart, onOpenCart, onNavigate, onOpenBookingsLoo
               <span className="font-serif text-xl md:text-2xl font-bold text-primary tracking-wide block leading-none text-white tracking-tight leading-[1.1] drop-shadow-md select-none">
                 Walk In Woods
               </span>
-              <span className="text-[10px] uppercase font-sans tracking-[0.25em] text-secondary font-semibold block mt-1 text-white tracking-tight leading-[1.1] drop-shadow-md select-none">
+              <span className="text-[10px] uppercase font-sans tracking-[0.25em] text-secondary font-semibold block mt-1 text-white tracking-tight leading-[1.1] drop-shadow-md select-none: text-white/90">
                EST. 2011
               </span>
             </div>
