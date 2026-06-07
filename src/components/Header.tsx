@@ -50,11 +50,11 @@ export default function Header({ cart, onOpenCart, onNavigate, onOpenBookingsLoo
             className="flex items-center gap-3 group text-left cursor-pointer"
           >
             <div className="w-10 h-10 rounded-full bg-primary flex items-center justify-center text-inverse-primary shadow-inner group-hover:scale-105 transition-all duration-300">
-              <img src="https://res.cloudinary.com/dlimc6j71/image/upload/v1780811213/W_-_1_1_kwd3la.png" alt="Walk n Woods" className="w-15 h-15 object-contain" />
+              <img src="https://res.cloudinary.com/dlimc6j71/image/upload/v1780811213/W_-_1_1_kwd3la.png" alt="Walk In Woods" className="w-15 h-15 object-contain" />
             </div>
             <div>
               <span className="font-serif text-xl md:text-2xl font-bold text-primary tracking-wide block leading-none text-white tracking-tight leading-[1.1] drop-shadow-md select-none">
-                Walk n Woods
+                Walk In Woods
               </span>
               <span className="text-[10px] uppercase font-sans tracking-[0.25em] text-secondary font-semibold block mt-1 text-white tracking-tight leading-[1.1] drop-shadow-md select-none">
                EST. 2011

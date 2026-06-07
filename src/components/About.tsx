@@ -77,9 +77,9 @@ export default function About({ onNavigate }: AboutProps) {
             </div>
 
             <p className="font-sans text-base md:text-lg text-on-surface-variant leading-relaxed select-none">
-              At Walk N Woods, we have been creating memorable dining experiences in Dehradun since 2011. 
+              At Walk In Woods, we have been creating memorable dining experiences in Dehradun since 2011. 
               From elegant fine dining and open-air rooftop seating to our signature cabana experience, every corner is designed to bring people together over exceptional food, warm hospitality, and unforgettable moments.
-               More than just a restaurant, Walk N Woods is a destination where great flavors and cherished memories come to life.
+               More than just a restaurant, Walk In Woods is a destination where great flavors and cherished memories come to life.
             </p>
 
             {/* Interactive Story Tabs */}

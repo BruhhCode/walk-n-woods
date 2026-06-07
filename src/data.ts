@@ -5,7 +5,7 @@ export const ABOUT_IMAGE = 'https://lh3.googleusercontent.com/aida-public/AB6AXu
 
 // Paste your own image URL for each menu item here.
 // Use the named constants below instead of editing each object inline.
-export const GRILLED_CHICKEN_IMAGE = 'https://res.cloudinary.com/dlimc6j71/image/upload/v1780679323/drankss_xhxzlc.png';
+export const Watermelon_Mojito = 'https://res.cloudinary.com/dlimc6j71/image/upload/v1780679323/drankss_xhxzlc.png';
 export const WOOD_FIRED_PIZZA_IMAGE = 'https://res.cloudinary.com/dlimc6j71/image/upload/v1780679318/ChatGPT_Image_Apr_30_2026_02_52_03_PM_wmjbve.png';
 export const TRUFFLE_CREAM_PASTA_IMAGE = 'https://res.cloudinary.com/dlimc6j71/image/upload/v1780679315/tandoori_platter_mppd1n.png';
 export const WAGYU_FOREST_BURGER_IMAGE = 'https://res.cloudinary.com/dlimc6j71/image/upload/v1780679314/mango_gi5t8z.png';
@@ -15,15 +15,15 @@ export const MIDNIGHT_LAVA_CAKE_IMAGE = 'https://res.cloudinary.com/dlimc6j71/im
 export const MENU_ITEMS: MenuItem[] = [
   {
     id: 'm1',
-    name: 'Grilled Chicken Steak',
-    description: 'Tender organic chicken breast, wild mushroom glaze, served with a side of root vegetable puree.',
+    name: 'Watermelon_Mojito',
+    description: 'A refreshing blend of fresh watermelon, mint leaves, zesty lime, and sparkling water, served over crushed ice.',
     price: 34,
-    image: GRILLED_CHICKEN_IMAGE,
+    image: Watermelon_Mojito,
     category: 'main',
     isChefsChoice: true,
-    ingredients: ['Organic Chicken Breast', 'Morel & Porcini Glaze', 'Parsnip Purée', 'Baby Heirloom Carrots', 'Microgreens'],
-    allergens: ['Dairy', 'Sulfites'],
-    sourcing: 'Sourced from Green Pastures Family Farm in Northern California. Raised 100% pasture-free and certified organic.'
+    ingredients: ['Watermelon', 'Fresh Mint Leaves', 'Crushed Ice', 'Sparkling Water', 'Lime wedges'],
+    allergens: ['no allergens'],
+    sourcing: 'Prepared fresh using premium watermelon, handpicked mint leaves, and freshly squeezed lime juice.'
   },
   {
     id: 'm2',
@@ -99,6 +99,6 @@ export const STORIES = [
   {
     id: 's3',
     title: 'Family Dining, Elevated',
-    description: 'For over a decade, Walk N Woods has been bringing families and friends together over exceptional food and memorable experiences. From intimate dinners to joyful celebrations, every visit is crafted with warm hospitality, elegant ambiance, and flavors that leave a lasting impression.'
+    description: 'For over a decade, Walk In Woods has been bringing families and friends together over exceptional food and memorable experiences. From intimate dinners to joyful celebrations, every visit is crafted with warm hospitality, elegant ambiance, and flavors that leave a lasting impression.'
   }
 ];
