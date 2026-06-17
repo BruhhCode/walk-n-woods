@@ -67,7 +67,7 @@ export default function Hero({ onNavigate }: HeroProps) {
           <div className="sm:ml-2">
             <div className="flex items-center gap-3 bg-surface/90 border border-primary-container/20 rounded-xl p-2 shadow-sm">
               <button
-                onClick={() => window.open('https://instagram.com/walknwoods', '_blank')}
+                onClick={() => window.open('https://www.instagram.com/walkinwoodsfinedine/', '_blank')}
                 aria-label="Open socials"
                 title="Follow us"
                 className="w-10 h-10 flex items-center justify-center bg-transparent text-primary rounded-lg hover:bg-primary/10 transition-colors duration-200"
@@ -76,16 +76,7 @@ export default function Hero({ onNavigate }: HeroProps) {
               </button>
 
               <button
-                onClick={() => onNavigate('contact')}
-                aria-label="Contact us"
-                title="Contact"
-                className="w-10 h-10 flex items-center justify-center bg-transparent text-primary rounded-lg hover:bg-primary/10 transition-colors duration-200"
-              >
-                <Mail className="w-5 h-5" />
-              </button>
-
-              <button
-                onClick={() => onNavigate('location')}
+                onClick={() => window.open('https://maps.app.goo.gl/NmZg9TTS9Jwvz4Vr7', '_blank')}
                 aria-label="Find us"
                 title="Location"
                 className="w-10 h-10 flex items-center justify-center bg-transparent text-primary rounded-lg hover:bg-primary/10 transition-colors duration-200"
