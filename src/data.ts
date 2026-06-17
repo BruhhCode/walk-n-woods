@@ -51,7 +51,7 @@ export const MENU_ITEMS: MenuItem[] = [
   },
   {
     id: 'm4',
-    name: 'Wagyu Forest Burger',
+    name: 'mango bliss ',
     description: 'Premium Wagyu beef patty, caramelized onions, smoked gouda, and our signature herb aioli.',
     price: 29,
     image: WAGYU_FOREST_BURGER_IMAGE,
@@ -62,7 +62,7 @@ export const MENU_ITEMS: MenuItem[] = [
   },
   {
     id: 'm5',
-    name: "Forager's Salad",
+    name: "Cocktails and Mocktails",
     description: 'A vibrant mix of seasonal greens, roasted nuts, edible flowers, and a light citrus vinaigrette.',
     price: 22,
     image: FORAGERS_SALAD_IMAGE,
