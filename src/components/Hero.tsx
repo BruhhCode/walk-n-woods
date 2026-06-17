@@ -1,5 +1,5 @@
 import { motion } from 'motion/react';
-import { ArrowDown, Flame, Compass } from 'lucide-react';
+import { ArrowDown, Flame, Compass, Instagram, Mail, MapPin } from 'lucide-react';
 import { HERO_IMAGE } from '../data';
 
 interface HeroProps {
@@ -64,6 +64,34 @@ export default function Hero({ onNavigate }: HeroProps) {
             <Compass className="w-4 h-4 text-inverse-primary group-hover:rotate-45 transition-transform duration-500" />
             Explore Menu
           </button>
+          <div className="flex items-center gap-3 sm:ml-2">
+            <button
+              onClick={() => window.open('https://instagram.com/walknwoods', '_blank')}
+              aria-label="Open socials"
+              title="Follow us"
+              className="w-10 h-10 flex items-center justify-center bg-surface/80 text-primary rounded-lg hover:bg-primary/10 transition-colors duration-200"
+            >
+              <Instagram className="w-5 h-5" />
+            </button>
+
+            <button
+              onClick={() => onNavigate('contact')}
+              aria-label="Contact us"
+              title="Contact"
+              className="w-10 h-10 flex items-center justify-center bg-surface/80 text-primary rounded-lg hover:bg-primary/10 transition-colors duration-200"
+            >
+              <Mail className="w-5 h-5" />
+            </button>
+
+            <button
+              onClick={() => onNavigate('location')}
+              aria-label="Find us"
+              title="Location"
+              className="w-10 h-10 flex items-center justify-center bg-surface/80 text-primary rounded-lg hover:bg-primary/10 transition-colors duration-200"
+            >
+              <MapPin className="w-5 h-5" />
+            </button>
+          </div>
           </motion.div>
 
         {/* Scroll cues */}
