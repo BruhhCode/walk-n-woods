@@ -80,6 +80,7 @@ export default function Hero({ onNavigate }: HeroProps) {
                 onClick={() => window.open('https://maps.app.goo.gl/NmZg9TTS9Jwvz4Vr7', '_blank')}
                 aria-label="Find us"
                 title="Location"
+                className="flex items-center justify-center gap-2 bg-primary text-white font-sans font-bold text-sm uppercase tracking-wider px-8 py-4 rounded-xl hover:bg-forest-deep hover:shadow-2xl transition-all duration-300 cursor-pointer group"
 >
                 <MapPin className="w-5 h-5" />
               </button>
