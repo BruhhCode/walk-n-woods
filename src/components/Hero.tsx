@@ -1,5 +1,5 @@
 import { motion } from 'motion/react';
-import { ArrowDown, Flame, Compass, Instagram, Mail, MapPin } from 'lucide-react';
+import { ArrowDown, Flame, Compass, Instagram, MapPin, MessageCircle } from 'lucide-react';
 import { HERO_IMAGE } from '../data';
 
 interface HeroProps {
@@ -65,6 +65,33 @@ export default function Hero({ onNavigate }: HeroProps) {
             Explore Menu
           </button>
         </motion.div>
+
+        <div className="flex flex-col sm:flex-row items-center justify-center gap-3 mt-4 w-full sm:w-auto">
+          <button
+            onClick={() => window.open('https://api.whatsapp.com/send?phone=+917895423317&text=Hi%20Walk%20In%20Woods%2C%20I%20would%20like%20to%20learn%20more.', '_blank', 'noopener,noreferrer')}
+            className="inline-flex items-center gap-2 bg-[#25D366] text-slate-950 font-semibold px-5 py-3 rounded-full hover:bg-[#1DA851] transition-all"
+            aria-label="Chat on WhatsApp"
+          >
+            <MessageCircle className="w-4 h-4" />
+            WhatsApp
+          </button>
+          <button
+            onClick={() => window.open('https://www.instagram.com/walkinwoodsfinedine/', '_blank', 'noopener,noreferrer')}
+            className="inline-flex items-center gap-2 bg-pink-200 text-slate-950 font-semibold px-5 py-3 rounded-full hover:bg-pink-300 transition-all"
+            aria-label="Open Instagram"
+          >
+            <Instagram className="w-4 h-4" />
+            Insta
+          </button>
+          <button
+            onClick={() => window.open('https://maps.app.goo.gl/NmZg9TTS9Jwvz4Vr7', '_blank', 'noopener,noreferrer')}
+            className="inline-flex items-center gap-2 bg-sky-200 text-slate-950 font-semibold px-5 py-3 rounded-full hover:bg-sky-300 transition-all"
+            aria-label="Open location"
+          >
+            <MapPin className="w-4 h-4" />
+            Location
+          </button>
+        </div>
 
         {/* Scroll cues */}
         <motion.button
