@@ -56,7 +56,7 @@ export default function Header({ cart, onOpenCart, onNavigate, onOpenBookingsLoo
               <span className="font-serif text-xl md:text-2xl font-bold text-primary tracking-wide block leading-none text-white tracking-tight leading-[1.1] drop-shadow-md select-none">
                 Walk In Woods
               </span>
-              <span className="text-[10px] uppercase font-sans tracking-[0.25em] text-secondary font-semibold block mt-1 text-white tracking-tight leading-[1.1] drop-shadow-md select-none: text-white/90">
+              <span className="text-[10px] uppercase font-sans tracking-[0.25em] text-white font-semibold block mt-1 text-white tracking-tight leading-[1.1] drop-shadow-md select-none: text-white/90">
                EST. 2011
               </span>
             </div>
@@ -84,7 +84,7 @@ export default function Header({ cart, onOpenCart, onNavigate, onOpenBookingsLoo
             </button>
             <div className="flex items-center gap-3">
               <button
-                onClick={() => window.open('https://api.whatsapp.com/send?phone=+919876543210&text=Hi%20Walk%20In%20Woods%2C%20I%20would%20like%20to%20learn%20more.', '_blank', 'noopener,noreferrer')}
+                onClick={() => window.open('https://api.whatsapp.com/send?phone=+917895423317&text=Hi%20Walk%20In%20Woods%2C%20I%20would%20like%20to%20learn%20more.', '_blank', 'noopener,noreferrer')}
                 className="inline-flex items-center gap-2 bg-[#25D366] text-slate-950 font-semibold px-4 py-2 rounded-full hover:bg-[#1DA851] transition-all"
                 aria-label="Chat on WhatsApp"
               >
@@ -93,7 +93,7 @@ export default function Header({ cart, onOpenCart, onNavigate, onOpenBookingsLoo
               </button>
               <button
                 onClick={() => window.open('https://www.instagram.com/walkinwoodsfinedine/', '_blank', 'noopener,noreferrer')}
-                className="inline-flex items-center gap-2 text-white border border-white/20 px-4 py-2 rounded-full hover:text-secondary transition-all"
+                className="inline-flex items-center gap-2 bg-white text-slate-950 font-semibold px-4 py-2 rounded-full hover:bg-slate-100 transition-all"
                 aria-label="Open Instagram"
               >
                 <Instagram className="w-4 h-4" />
@@ -101,7 +101,7 @@ export default function Header({ cart, onOpenCart, onNavigate, onOpenBookingsLoo
               </button>
               <button
                 onClick={() => window.open('https://maps.app.goo.gl/NmZg9TTS9Jwvz4Vr7', '_blank', 'noopener,noreferrer')}
-                className="inline-flex items-center gap-2 text-white border border-white/20 px-4 py-2 rounded-full hover:text-secondary transition-all"
+                className="inline-flex items-center gap-2 bg-white text-slate-950 font-semibold px-4 py-2 rounded-full hover:bg-slate-100 transition-all"
                 aria-label="Open location"
               >
                 <MapPin className="w-4 h-4" />
@@ -183,7 +183,7 @@ export default function Header({ cart, onOpenCart, onNavigate, onOpenBookingsLoo
                     setMobileMenuOpen(false);
                     window.open('https://www.instagram.com/walkinwoodsfinedine/', '_blank', 'noopener,noreferrer');
                   }}
-                  className="w-full inline-flex items-center justify-center gap-2 text-white border border-white/20 py-3 rounded-full hover:text-secondary transition-all"
+                  className="w-full inline-flex items-center justify-center gap-2 bg-white text-slate-950 font-semibold py-3 rounded-full hover:bg-slate-100 transition-all"
                   aria-label="Open Instagram"
                 >
                   <Instagram className="w-5 h-5" />
@@ -194,7 +194,7 @@ export default function Header({ cart, onOpenCart, onNavigate, onOpenBookingsLoo
                     setMobileMenuOpen(false);
                     window.open('https://maps.app.goo.gl/NmZg9TTS9Jwvz4Vr7', '_blank', 'noopener,noreferrer');
                   }}
-                  className="w-full inline-flex items-center justify-center gap-2 text-white border border-white/20 py-3 rounded-full hover:text-secondary transition-all"
+                  className="w-full inline-flex items-center justify-center gap-2 bg-white text-slate-950 font-semibold py-3 rounded-full hover:bg-slate-100 transition-all"
                   aria-label="Open location"
                 >
                   <MapPin className="w-5 h-5" />

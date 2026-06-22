@@ -64,29 +64,7 @@ export default function Hero({ onNavigate }: HeroProps) {
             <Compass className="w-4 h-4 text-inverse-primary group-hover:rotate-45 transition-transform duration-500" />
             Explore Menu
           </button>
-          <div className="sm:ml-2">
-            <div className="flex items-center gap-3 bg-surface/90 border border-primary-container/20 rounded-xl p-2 shadow-sm">
-              <button
-                onClick={() => window.open('https://www.instagram.com/walkinwoodsfinedine/', '_blank')}
-                aria-label="Open socials"
-                title="Follow us"
-                            className="flex items-center justify-center gap-2 bg-primary text-white font-sans font-bold text-sm uppercase tracking-wider px-8 py-4 rounded-xl hover:bg-forest-deep hover:shadow-2xl transition-all duration-300 cursor-pointer group"
-
-              >
-                <Instagram className="w-5 h-5" />
-              </button>
-
-              <button
-                onClick={() => window.open('https://maps.app.goo.gl/NmZg9TTS9Jwvz4Vr7', '_blank')}
-                aria-label="Find us"
-                title="Location"
-                className="flex items-center justify-center gap-2 bg-primary text-white font-sans font-bold text-sm uppercase tracking-wider px-8 py-4 rounded-xl hover:bg-forest-deep hover:shadow-2xl transition-all duration-300 cursor-pointer group"
->
-                <MapPin className="w-5 h-5" />
-              </button>
-            </div>
-          </div>
-          </motion.div>
+        </motion.div>
 
         {/* Scroll cues */}
         <motion.button
