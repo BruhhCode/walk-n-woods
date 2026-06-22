@@ -142,8 +142,6 @@ export default function Header({ cart, onOpenCart, onNavigate, onOpenBookingsLoo
 
             </div>
           </motion.div>
-
-          </motion.div>
         )}
       </AnimatePresence>
     </>
