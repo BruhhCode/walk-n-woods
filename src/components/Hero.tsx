@@ -75,7 +75,7 @@ export default function Hero({ onNavigate }: HeroProps) {
           className="mt-12 text-primary/80 hover:text-white cursor-pointer flex flex-col items-center gap-2"
           aria-label="Scroll to narrative story"
         >
-          <span className="font-sans text-[10px] tracking-[0.2em] uppercase text-on-surface-variant">
+          <span className="font-sans text-[10px] tracking-[0.2em] uppercase text-on-surface-variant text-white/80">
             Our Story
           </span>
           <ArrowDown className="w-5 h-5 animate-bounce" />
