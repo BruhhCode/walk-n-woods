@@ -170,7 +170,7 @@ export default function Header({ cart, onOpenCart, onNavigate, onOpenBookingsLoo
                 <button
                   onClick={() => {
                     setMobileMenuOpen(false);
-                    window.open('https://api.whatsapp.com/send?phone=+919876543210&text=Hi%20Walk%20In%20Woods%2C%20I%20would%20like%20to%20learn%20more.', '_blank', 'noopener,noreferrer');
+                    window.open('https://api.whatsapp.com/send?phone=+917895423317&text=Hi%20Walk%20In%20Woods%2C%20I%20would%20like%20to%20learn%20more.', '_blank', 'noopener,noreferrer');
                   }}
                   className="w-full inline-flex items-center justify-center gap-2 bg-[#25D366] text-slate-950 font-semibold py-3 rounded-full hover:bg-[#1DA851] transition-all"
                   aria-label="Chat on WhatsApp"
