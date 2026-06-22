@@ -141,6 +141,11 @@ export default function Footer({ onNavigate }: FooterProps) {
                 <span className="text-primary font-bold block">Operating Hours</span>
                 Monday - Sunday, 11:00 AM - 11:00 PM <br />
               </p>
+
+              <p className="leading-relaxed font-sans">
+                <span className="text-primary font-bold block">Contact Number</span>
+                +91 78654 23317 <br />
+              </p>
             </div>
           </div>
         </div>
