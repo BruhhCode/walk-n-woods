@@ -31,7 +31,7 @@ export default function Hero({ onNavigate }: HeroProps) {
           className="font-serif text-5xl md:text-7xl font-bold text-primary tracking-tight leading-[1.1] select-none"
         >
           <span className="w-8 h-[1px] bg-primary/20 mx-auto mb-3 block" />
-          <span className="font-sans text-[11px] md:text-xs text-secondary font-bold tracking-[0.3em] uppercase">
+          <span className="font-sans text-[11px] md:text-xs text-white font-bold tracking-[0.3em] uppercase">
             Est. 2011
           </span>
           <span className="w-8 h-[1px] bg-primary/20 mx-auto mt-3 block" />
@@ -72,7 +72,7 @@ export default function Hero({ onNavigate }: HeroProps) {
           animate={{ opacity: [0, 1, 0] }}
           transition={{ repeat: Infinity, duration: 2.5, delay: 1 }}
           onClick={() => onNavigate('about')}
-          className="mt-12 text-primary/80 hover:text-primary cursor-pointer flex flex-col items-center gap-2"
+          className="mt-12 text-primary/80 hover:text-white cursor-pointer flex flex-col items-center gap-2"
           aria-label="Scroll to narrative story"
         >
           <span className="font-sans text-[10px] tracking-[0.2em] uppercase text-on-surface-variant">
