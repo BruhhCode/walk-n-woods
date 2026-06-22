@@ -93,7 +93,7 @@ export default function Header({ cart, onOpenCart, onNavigate, onOpenBookingsLoo
               </button>
               <button
                 onClick={() => window.open('https://www.instagram.com/walkinwoodsfinedine/', '_blank', 'noopener,noreferrer')}
-                className="inline-flex items-center gap-2 bg-white text-slate-950 font-semibold px-4 py-2 rounded-full hover:bg-slate-100 transition-all"
+                className="inline-flex items-center gap-2 bg-pink-200 text-slate-950 font-semibold px-4 py-2 rounded-full hover:bg-pink-300 transition-all"
                 aria-label="Open Instagram"
               >
                 <Instagram className="w-4 h-4" />
@@ -101,7 +101,7 @@ export default function Header({ cart, onOpenCart, onNavigate, onOpenBookingsLoo
               </button>
               <button
                 onClick={() => window.open('https://maps.app.goo.gl/NmZg9TTS9Jwvz4Vr7', '_blank', 'noopener,noreferrer')}
-                className="inline-flex items-center gap-2 bg-white text-slate-950 font-semibold px-4 py-2 rounded-full hover:bg-slate-100 transition-all"
+                className="inline-flex items-center gap-2 bg-sky-200 text-slate-950 font-semibold px-4 py-2 rounded-full hover:bg-sky-300 transition-all"
                 aria-label="Open location"
               >
                 <MapPin className="w-4 h-4" />
@@ -183,7 +183,7 @@ export default function Header({ cart, onOpenCart, onNavigate, onOpenBookingsLoo
                     setMobileMenuOpen(false);
                     window.open('https://www.instagram.com/walkinwoodsfinedine/', '_blank', 'noopener,noreferrer');
                   }}
-                  className="w-full inline-flex items-center justify-center gap-2 bg-white text-slate-950 font-semibold py-3 rounded-full hover:bg-slate-100 transition-all"
+                  className="w-full inline-flex items-center justify-center gap-2 bg-pink-200 text-slate-950 font-semibold py-3 rounded-full hover:bg-pink-300 transition-all"
                   aria-label="Open Instagram"
                 >
                   <Instagram className="w-5 h-5" />
@@ -194,7 +194,7 @@ export default function Header({ cart, onOpenCart, onNavigate, onOpenBookingsLoo
                     setMobileMenuOpen(false);
                     window.open('https://maps.app.goo.gl/NmZg9TTS9Jwvz4Vr7', '_blank', 'noopener,noreferrer');
                   }}
-                  className="w-full inline-flex items-center justify-center gap-2 bg-white text-slate-950 font-semibold py-3 rounded-full hover:bg-slate-100 transition-all"
+                  className="w-full inline-flex items-center justify-center gap-2 bg-sky-200 text-slate-950 font-semibold py-3 rounded-full hover:bg-sky-300 transition-all"
                   aria-label="Open location"
                 >
                   <MapPin className="w-5 h-5" />
