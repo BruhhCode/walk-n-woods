@@ -1,5 +1,5 @@
 import  { useState, useEffect } from 'react';
-import { Menu, X, Calendar, ShoppingBag, Leaf } from 'lucide-react';
+import { Menu, X, Instagram, MapPin, MessageCircle } from 'lucide-react';
 import { motion, AnimatePresence } from 'motion/react';
 import { CartItem } from '../types';
 
@@ -63,7 +63,7 @@ export default function Header({ cart, onOpenCart, onNavigate, onOpenBookingsLoo
           </button>
 
           {/* Desktop Navigation */}
-          <div className="hidden md:flex items-center gap-8 font-sans font-medium text-sm">
+          <div className="hidden md:flex items-center gap-6 font-sans font-medium text-sm">
             <button
               onClick={() => handleLinkClick('hero')}
               className="text-white hover:text-secondary tracking-tight leading-[1.1] select-none transition-all cursor-pointer font-semibold relative after:absolute after:bottom-[-4px] after:left-0 after:w-0 hover:after:w-full after:h-[1px] after:bg-secondary after:transition-all"
@@ -82,7 +82,32 @@ export default function Header({ cart, onOpenCart, onNavigate, onOpenBookingsLoo
             >
               Menu
             </button>
-           
+            <div className="flex items-center gap-3">
+              <button
+                onClick={() => window.open('https://api.whatsapp.com/send?phone=+919876543210&text=Hi%20Walk%20In%20Woods%2C%20I%20would%20like%20to%20learn%20more.', '_blank', 'noopener,noreferrer')}
+                className="inline-flex items-center gap-2 bg-[#25D366] text-slate-950 font-semibold px-4 py-2 rounded-full hover:bg-[#1DA851] transition-all"
+                aria-label="Chat on WhatsApp"
+              >
+                <MessageCircle className="w-4 h-4" />
+                WhatsApp
+              </button>
+              <button
+                onClick={() => window.open('https://www.instagram.com/walkinwoodsfinedine/', '_blank', 'noopener,noreferrer')}
+                className="inline-flex items-center gap-2 text-white border border-white/20 px-4 py-2 rounded-full hover:text-secondary transition-all"
+                aria-label="Open Instagram"
+              >
+                <Instagram className="w-4 h-4" />
+                Insta
+              </button>
+              <button
+                onClick={() => window.open('https://maps.app.goo.gl/NmZg9TTS9Jwvz4Vr7', '_blank', 'noopener,noreferrer')}
+                className="inline-flex items-center gap-2 text-white border border-white/20 px-4 py-2 rounded-full hover:text-secondary transition-all"
+                aria-label="Open location"
+              >
+                <MapPin className="w-4 h-4" />
+                Location
+              </button>
+            </div>
           </div>
 
 
@@ -140,6 +165,42 @@ export default function Header({ cart, onOpenCart, onNavigate, onOpenBookingsLoo
               >
                 My Bookings Lookup
               </button>
+
+              <div className="mt-6 flex flex-col gap-3">
+                <button
+                  onClick={() => {
+                    setMobileMenuOpen(false);
+                    window.open('https://api.whatsapp.com/send?phone=+919876543210&text=Hi%20Walk%20In%20Woods%2C%20I%20would%20like%20to%20learn%20more.', '_blank', 'noopener,noreferrer');
+                  }}
+                  className="w-full inline-flex items-center justify-center gap-2 bg-[#25D366] text-slate-950 font-semibold py-3 rounded-full hover:bg-[#1DA851] transition-all"
+                  aria-label="Chat on WhatsApp"
+                >
+                  <MessageCircle className="w-5 h-5" />
+                  WhatsApp
+                </button>
+                <button
+                  onClick={() => {
+                    setMobileMenuOpen(false);
+                    window.open('https://www.instagram.com/walkinwoodsfinedine/', '_blank', 'noopener,noreferrer');
+                  }}
+                  className="w-full inline-flex items-center justify-center gap-2 text-white border border-white/20 py-3 rounded-full hover:text-secondary transition-all"
+                  aria-label="Open Instagram"
+                >
+                  <Instagram className="w-5 h-5" />
+                  Insta
+                </button>
+                <button
+                  onClick={() => {
+                    setMobileMenuOpen(false);
+                    window.open('https://maps.app.goo.gl/NmZg9TTS9Jwvz4Vr7', '_blank', 'noopener,noreferrer');
+                  }}
+                  className="w-full inline-flex items-center justify-center gap-2 text-white border border-white/20 py-3 rounded-full hover:text-secondary transition-all"
+                  aria-label="Open location"
+                >
+                  <MapPin className="w-5 h-5" />
+                  Location
+                </button>
+              </div>
             </div>
 
           </motion.div>
