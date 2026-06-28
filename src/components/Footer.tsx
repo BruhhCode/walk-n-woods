@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { motion, AnimatePresence } from 'motion/react';
-import { Mail, ArrowUp, Check, ShieldCheck, Leaf } from 'lucide-react';
+import { Mail, ArrowUp, Check, ShieldCheck, Leaf, Phone } from 'lucide-react';
 
 interface FooterProps {
   onNavigate: (sectionId: string) => void;
@@ -72,6 +72,19 @@ export default function Footer({ onNavigate }: FooterProps) {
                 {/* Micro tooltip */}
                 <span className="absolute -top-10 left-1/2 -translate-x-1/2 bg-primary text-white text-[10px] py-1.5 px-3 rounded-lg opacity-0 group-hover:opacity-100 transition-opacity whitespace-nowrap pointer-events-none shadow-md z-10">
                   Visit Instagram
+                </span>
+              </button>
+
+              <button
+                onClick={() => {
+                  window.location.href = 'tel:+917895423317';
+                }}
+                className="w-10 h-10 rounded-xl bg-surface-container border border-primary-container/10 flex items-center justify-center text-secondary hover:text-white hover:bg-amber-500 transition-all cursor-pointer shadow-sm group relative"
+                aria-label="Call now"
+              >
+                <Phone className="w-4 h-4" />
+                <span className="absolute -top-10 left-1/2 -translate-x-1/2 bg-primary text-white text-[10px] py-1.5 px-3 rounded-lg opacity-0 group-hover:opacity-100 transition-opacity whitespace-nowrap pointer-events-none shadow-md z-10">
+                  Call Now
                 </span>
               </button>
 

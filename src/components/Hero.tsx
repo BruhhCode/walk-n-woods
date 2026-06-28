@@ -1,5 +1,5 @@
 import { motion } from 'motion/react';
-import { ArrowDown, Flame, Compass, Instagram, MapPin, MessageCircle } from 'lucide-react';
+import { ArrowDown, Compass, Instagram, MapPin, MessageCircle, Phone } from 'lucide-react';
 import { HERO_IMAGE } from '../data';
 
 interface HeroProps {
@@ -67,6 +67,14 @@ export default function Hero({ onNavigate }: HeroProps) {
         </motion.div>
 
         <div className="flex flex-col sm:flex-row items-center justify-center gap-3 mt-4 w-full sm:w-auto">
+          <button
+            onClick={() => window.location.href = 'tel:+917895423317'}
+            className="inline-flex items-center gap-2 bg-amber-200 text-slate-950 font-semibold px-5 py-3 rounded-full hover:bg-amber-300 transition-all"
+            aria-label="Call now"
+          >
+            <Phone className="w-4 h-4" />
+            Call Now
+          </button>
           <button
             onClick={() => window.open('https://api.whatsapp.com/send?phone=+917895423317&text=Hi%20Walk%20In%20Woods%2C%20I%20would%20like%20to%20learn%20more.', '_blank', 'noopener,noreferrer')}
             className="inline-flex items-center gap-2 bg-[#25D366] text-slate-950 font-semibold px-5 py-3 rounded-full hover:bg-[#1DA851] transition-all"

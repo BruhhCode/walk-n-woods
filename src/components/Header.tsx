@@ -1,5 +1,5 @@
 import  { useState, useEffect } from 'react';
-import { Menu, X, Instagram, MapPin } from 'lucide-react';
+import { Menu, X, Instagram, MapPin, Phone } from 'lucide-react';
 import { motion, AnimatePresence } from 'motion/react';
 import { CartItem } from '../types';
 
@@ -85,6 +85,15 @@ export default function Header({ cart, onOpenCart, onNavigate, onOpenBookingsLoo
           </div>
 
 
+            <button
+              onClick={() => window.location.href = 'tel:+917895423317'}
+              className="hidden md:inline-flex items-center gap-2 rounded-full bg-amber-200 px-3 py-2 text-sm font-semibold text-slate-950 hover:bg-amber-300 transition-all"
+              aria-label="Call now"
+            >
+              <Phone className="w-4 h-4" />
+              Call
+            </button>
+
             {/* Mobile Menu Icon */}
             <button
               onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
@@ -129,6 +138,16 @@ export default function Header({ cart, onOpenCart, onNavigate, onOpenBookingsLoo
                 className="py-3 text-white border-b border-primary-container/10 hover:text-secondary"
               >
                 Reservations
+              </button>
+              <button
+                onClick={() => {
+                  setMobileMenuOpen(false);
+                  window.location.href = 'tel:+917895423317';
+                }}
+                className="py-3 text-white border-b border-primary-container/10 hover:text-secondary flex items-center justify-center gap-2"
+              >
+                <Phone className="w-4 h-4" />
+                Call Now
               </button>
               <button
                 onClick={() => {
